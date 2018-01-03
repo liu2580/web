@@ -1,0 +1,224 @@
+//utils
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/normalize";
+@import "./utils/mixin";
+
+//Component
+@import "./components/header";
+@import "./components/menu";
+@import "./components/footer";
+
+//variables
+$pg-grid-left-width: 710px;
+$pg-gird-right-width: 350px;
+$pg-bk-image: "jskx_wzy_05.jpg";
+$pg-title-image: "1401081453563969729.jpg";
+$pg-box-height: 230px;
+
+
+.pg-container{
+    width: 1080px;
+    margin:{
+        top: 10px;
+        left: auto;
+        right: auto;
+    }
+    font-family: $font-family-global;
+
+    >.pg-grid-left{
+        float: left;
+        width: $pg-grid-left-width;
+        border: 1px solid grey;
+    }
+
+    >.pg-grid-right{
+        float: right;
+        width: $pg-gird-right-width;
+    }
+}
+
+.pg-path{
+    height: 30px;
+    width: $pg-grid-left-width - 15px;
+    border-bottom: 1px solid grey;
+    line-height: 30px;
+    overflow: hidden;
+
+    padding: {
+        left: 15px;
+    };
+
+    font: {
+        size: 14px;
+    };
+    text-align: left;
+    color: black;
+    a{
+        color: black;
+    };
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.pg-news{
+    width: $pg-grid-left-width;
+    background: url($base-image-url-261 + $pg-bk-image);
+    border: 1px;
+
+    >.pg-paper{
+        margin:{
+            left: auto;
+            right: auto;
+        }
+
+        width: $pg-grid-left-width - 40px;
+        padding: {
+            left: 15px;
+            right: 15px;
+            top: 20px;
+            bottom: 10px;
+        };
+
+        >.pg-append{
+
+            height: 13px;
+            line-height: 13px;
+            width: inherit;
+            text-align: right;
+
+            font: {
+                size: 12px;
+            };
+            color: black;
+
+            >a{
+                color: black;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+
+        >.pg-title{
+            font: {
+                size: 24px;
+                weight: bold;
+            };
+            width: inherit;
+            text-align: center;
+            line-height: 45px;
+            height: 45px;
+            color: $news-text-color;
+            border-bottom: 1px solid grey;
+        }
+
+        >.pg-time{
+            font: {
+                size: 13px;
+            };
+            width: inherit;
+            text-align: center;
+            line-height: 20px;
+            height: 20px;
+            color: black;
+        }
+
+        >.pg-ctn{
+            margin-top: 15px;
+            width: inherit;
+
+            font: {
+                size: 15px;
+            };
+            line-height: 25px;
+
+            p{
+                text-indent: 2em;
+            };
+        }
+        >.pg-footer{
+            margin-top: 20px;
+            width: inherit;
+            text-align: right;
+
+            font: {
+                size: 15px;
+            };
+            line-height: 30px;
+        }
+    }
+}
+
+.pg-box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    width: $pg-gird-right-width;
+    height: $pg-box-height;
+    border: 2px solid grey;
+    margin-bottom: 5px;
+
+    >.pg-title{
+        height: 40px;
+        line-height: 40px;
+        width: $pg-gird-right-width - 30px;
+        margin: auto;
+
+        border-bottom: 1px solid grey;
+
+        >.pg-ttl-left{
+            float: left;
+            height: inherit;
+
+            font: {
+                size: 16px;
+                weight: bold;
+            };
+            color: black;
+        }
+
+        >.pg-more{
+            float: right;
+            height: inherit;
+            width: 70px;
+            text-align: right;
+
+            font-size: 15px;
+
+            a{
+                color: $news-text-color;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    >.pg-content{
+        height: $pg-box-height - 30px;
+        line-height: 25px;
+        font-size: 14px;
+        width: $pg-gird-right-width - 30px;
+        margin: {
+            top: 5px;
+            left: auto;
+            right: auto;
+        };
+
+        li{
+            list-style: square inside;
+
+            a{
+                color: black;
+            };
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

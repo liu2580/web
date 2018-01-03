@@ -1,0 +1,361 @@
+@charset "UTF-8";
+.wrapper {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0; }
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.container {
+  width: 1270px;
+  margin: auto; }
+
+.blue-line {
+  width: 100%;
+  height: 5px;
+  background-color: #005a85; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.display-none {
+  display: none; }
+
+/* normalize setting */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset, legend, input, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img, div, legend {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 1; }
+
+a {
+  text-decoration: none;
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+ul li {
+  list-style-type: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+.header-outer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url("../images/281/skx_01.jpg");
+  background-repeat: repeat;
+  background-position: center; }
+  .header-outer .header {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    width: 1270px;
+    height: 118px; }
+    .header-outer .header .header__logo_box {
+      width: 485px;
+      float: left;
+      overflow: hidden; }
+      .header-outer .header .header__logo_box .header__logo {
+        height: 115px;
+        width: 454px; }
+    .header-outer .header .header__right {
+      float: right;
+      height: 118px; }
+      .header-outer .header .header__right .header__option {
+        font-family: "宋体", Tahoma, verdana, sans-serif;
+        font-size: 14px;
+        color: white;
+        text-align: right; }
+        .header-outer .header .header__right .header__option a {
+          color: inherit; }
+        .header-outer .header .header__right .header__option a:hover {
+          color: red; }
+      .header-outer .header .header__right .header__search {
+        height: 70px;
+        width: 340px;
+        margin: 0;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        padding-left: 0;
+        padding-right: 0; }
+        .header-outer .header .header__right .header__search .search_box {
+          height: 32px;
+          margin: 0;
+          width: 265px;
+          line-height: 32px;
+          border: 0;
+          padding-left: 9px;
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-right: 0;
+          background-color: #8cb7d7;
+          float: left; }
+        .header-outer .header .header__right .header__search .search_button {
+          width: 64px;
+          height: 32px;
+          float: left; }
+
+.menu-outer {
+  width: 100%;
+  height: 43px;
+  text-align: left;
+  background-image: url("../images/281/skx_03.jpg");
+  background-position: center; }
+  .menu-outer .menu {
+    margin: auto;
+    width: 1200px;
+    height: 43px;
+    overflow: hidden;
+    font-family: "宋体", Tahoma, verdana, sans-serif;
+    font-size: 18px; }
+    .menu-outer .menu .menu-item-text {
+      display: block;
+      width: 114px;
+      height: 23px;
+      float: left;
+      padding-top: 10px; }
+      .menu-outer .menu .menu-item-text a {
+        color: white; }
+      .menu-outer .menu .menu-item-text a:hover {
+        color: red;
+        font-weight: bold; }
+      .menu-outer .menu .menu-item-text .menu-cur {
+        font-weight: bold;
+        color: orangered; }
+      .menu-outer .menu .menu-item-text > .menu-first {
+        text-indent: 2em; }
+    .menu-outer .menu .menu-item-image {
+      float: right;
+      width: 145px;
+      height: 43px;
+      line-height: 43px;
+      text-align: center;
+      font-weight: bold;
+      color: orangered; }
+
+.footer {
+  margin: auto;
+  height: 70px;
+  width: 1070px;
+  border-top: 2px solid blue;
+  border-left: 1px solid #cbe1f4;
+  border-right: 1px solid #cbe1f4;
+  border-bottom: 1px solid #cbe1f4;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; }
+  .footer .footer__content {
+    font-family: "宋体", Tahoma, verdana, sans-serif;
+    font-size: 14px;
+    color: #595757;
+    line-height: 20px;
+    text-align: center; }
+
+.i-footer {
+  width: 100%;
+  height: 120px;
+  background-color: #2781c6;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 15px; }
+  .i-footer > .i-ftr-ctn {
+    height: 90px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "宋体", Tahoma, verdana, sans-serif;
+    font-size: 14px;
+    color: white; }
+
+.gk-row {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 412px;
+  font-family: Microsoft YaHei, sans-serif; }
+  .gk-row > .grid-left {
+    height: inherit;
+    width: 232px;
+    float: left;
+    border: 1px solid grey;
+    background: url("../images/201/jskx_lmy_04.jpg") 0 0 repeat-y; }
+  .gk-row > .grid-right {
+    height: inherit;
+    width: 763px;
+    float: right;
+    border: 1px solid grey; }
+
+.gk-menu {
+  height: inherit;
+  width: inherit;
+  text-align: center; }
+  .gk-menu > .gk-menu-title {
+    height: 37px;
+    line-height: 25px;
+    background: url("../images/201/jskx_lmy_07.jpg") center no-repeat;
+    width: 200px;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; }
+  .gk-menu > .gk-menu-item {
+    background: url("../picture/0/1401061605436724216.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 170px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: bold; }
+  .gk-menu > .gk-item-show {
+    color: orange; }
+  .gk-menu > .gk-item-hidden {
+    color: black; }
+
+.gk-path {
+  height: 30px;
+  width: 748px;
+  border-bottom: 1px solid grey;
+  line-height: 30px;
+  padding-left: 15px;
+  font-size: 14px;
+  text-align: left;
+  color: black; }
+  .gk-path a {
+    color: black; }
+  .gk-path a:hover {
+    text-decoration: underline; }
+
+.gk-title {
+  height: 30px;
+  line-height: 30px;
+  width: 733px;
+  border-bottom: 1px solid #075793;
+  color: white;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  font-weight: bold; }
+  .gk-title > .gk-title-left {
+    float: left;
+    height: inherit;
+    padding-left: 15px;
+    padding-right: 20px;
+    background-color: #89d3fa;
+    border-top-right-radius: 20px; }
+
+.gk-content {
+  width: 733px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "宋体", Tahoma, verdana, sans-serif;
+  font-size: 14px;
+  line-height: 24px; }
+  .gk-content > .gk-line-left {
+    float: left;
+    color: black;
+    width: 660px; }
+    .gk-content > .gk-line-left li {
+      list-style: inside square;
+      border-bottom: 1px dashed grey; }
+      .gk-content > .gk-line-left li a {
+        color: black; }
+      .gk-content > .gk-line-left li a:hover {
+        text-decoration: underline; }
+  .gk-content > .gk-line-right {
+    float: right;
+    color: grey;
+    width: 70px;
+    text-align: right; }
+    .gk-content > .gk-line-right li {
+      border-bottom: 1px dashed grey; }
+
+/*# sourceMappingURL=xxgk.css.map */

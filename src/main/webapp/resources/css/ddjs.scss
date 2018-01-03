@@ -1,0 +1,385 @@
+//utils
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/normalize";
+@import "./utils/mixin";
+
+//Component
+@import "./components/header";
+@import "./components/menu";
+@import "./components/footer";
+
+//variables
+$js-col-left-w: 438px;
+$js-col-right-w: 780px;
+$js-contain-h: 850px;
+$js-box-width: 370px;
+$js-banner-width: 438px;
+$js-banner-height: 250px;
+
+
+//layout part css
+//
+//
+.js-container{
+    width: $container-width;
+    height: $js-contain-h;
+    margin: {
+        top: 10px;
+        left: auto;
+        right: auto;
+    };
+    font-family: $font-family-title;
+
+    >.js-col-left{
+        width: $js-col-left-w;
+        height: $js-contain-h - 2px;
+        float: left;
+
+        >.js-row-banner{
+            width: inherit;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+
+        >.js-row-info{
+            width: inherit;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    >.js-col-right{
+        width: $js-col-right-w;
+        height: $js-contain-h - 2px;
+        float: right;
+
+        >.js-title-row{
+            width: inherit;
+            height: 43px;
+            margin-bottom: 20px;
+        }
+
+        >.js-ab-row{
+            width: inherit;
+            height: 15px;
+            margin-bottom: 10px;
+        }
+
+        >.js-row-1{
+            width: inherit;
+            height: 365px;
+            margin-bottom: 10px;
+        }
+
+        >.js-row-2{
+            width: inherit;
+            height: 365px;
+        }
+    }
+}
+
+.js-title{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+
+    a{
+        color: #0757be;
+    }
+    a:hover{
+        color: red;
+    }
+}
+
+.js-abstract{
+    height: 15px;
+    line-height: 15px;
+    width: inherit;
+    text-indent: 2em;
+    text-align: left;
+
+    font: {
+        size: 14px;
+    };
+
+    a{
+        color: red;
+    }
+}
+
+.js-box{
+    height: 360px;
+    width: $js-box-width;
+
+    >.js-title{
+        width: inherit;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+
+        >.js-ttl-left{
+            float: left;
+            height: inherit;
+            width: 84px;
+            text-align: center;
+            font-size: 18px;
+            color: #c12c20;
+            border-bottom: 1px solid #c12c20;
+        }
+
+        >.js-ttl-more{
+            float: right;
+            height: inherit;
+            width: 50px;
+            text-align: right;
+            font-size: 14px;
+
+            a{
+                color: black;
+            }
+            a:hover{
+                color: red;
+            }
+        }
+    }
+
+    >.js-content{
+        height: 330px;
+        line-height: 35px;
+        width: $js-box-width;
+        font: {
+            size: 15px;
+        };
+        box-sizing: border-box;
+        padding-top: 3px;
+
+        li{
+            list-style: disc inside;
+            a{
+                color: black;
+            }
+            a:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+.js-info{
+    width: $js-col-left-w;
+    height: inherit;
+    background-color: #f4f4f4;
+
+    >.js-title{
+        width: $js-col-left-w;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        border-bottom: 1px solid grey;
+
+        >.js-ttl-left{
+            float: left;
+            height: inherit;
+            width: 84px;
+            text-align: center;
+            font-size: 18px;
+            color: $news-text-color;
+        }
+
+        >.js-ttl-more{
+            float: right;
+            height: inherit;
+            width: 50px;
+            text-align: right;
+            font-size: 14px;
+
+            a{
+                color: black;
+            }
+            a:hover{
+                color: red;
+            }
+        }
+    }
+
+    >.js-content{
+        height: 330px;
+        line-height: 35px;
+        width: inherit;
+        font: {
+            size: 16px;
+        };
+        box-sizing: border-box;
+        padding: {
+            left: 5px;
+            top: 3px;
+        };
+
+        li{
+            list-style: disc inside;
+            a{
+                color: black;
+            }
+            a:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+.js-side-img{
+    width: $js-col-left-w;
+}
+
+.js-slider{
+    width: $container-width;
+    height: 190px;
+    margin: auto;
+
+    >.js-slider-left{
+        float: left;
+
+        background-color: #0857be;
+        box-sizing: border-box;
+        height: inherit;
+        width: 50px;
+        text-align: center;
+        padding: {
+            top: 35px;
+            left: 5px;
+            right: 5px;
+        };
+
+        font-family: $font-family-title;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        line-height: 30px;
+    }
+
+    >.js-slider-box{
+        width: 1180px;
+        height: inherit;
+        float: right;
+        overflow: hidden;
+
+        >.img-conn{
+            height: inherit;
+            width: 6 * 225px;
+            animation: act-slider 3s linear 0s infinite;
+
+            >.img-item{
+                float: left;
+                width: 220px;
+                height: inherit;
+                margin-right: 5px;
+
+                >.img-ctn{
+                    width: 220px;
+                    height: 160px;
+                }
+                >.img-sub{
+                    width: 220px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    font: {
+                        size: 16px;
+                        weight: bold;
+                    };
+
+                    a{
+                        color: black;
+                    }
+                    a:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes act-slider {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -225px;
+    }
+}
+
+.js-banner{
+    height: $js-banner-height;
+    width: $js-banner-width;
+    overflow: hidden;
+    position: relative;
+
+    >.js-img-conn{
+        height: inherit;
+        width: $js-banner-width * 5;
+
+        >.js-img-item{
+            float: left;
+            height: $js-banner-height;
+            width: $js-banner-width;
+
+            >a>img{
+                width: $js-banner-width;
+                height: $js-banner-height;
+            }
+            >.js-img-sub{
+                width: $js-banner-width;
+                height: 60px;
+                line-height: 40px;
+
+                text-align: center;
+                font: {
+                    size: 18px;
+                    weight: bold;
+                };
+
+                position: absolute;
+                bottom: 0;
+                background: rgba(0,0,0,0.6);
+
+                z-index: 1;
+                >a{
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    >.js-img-index{
+        position: absolute;
+        bottom: 0;
+
+        width: inherit;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+
+        z-index: 2;
+        >span{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-left:.5em;
+            border-radius:6px;
+            background-color:white;
+            color: black;
+            text-align:center;
+            cursor: pointer;
+        }
+        >.index-on{
+            background-color: #0f73bf;
+        }
+    }
+}
+

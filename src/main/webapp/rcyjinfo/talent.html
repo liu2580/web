@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/talent.css">
+    <script src="../resources/js/jquery-3.2.1.min.js"></script>
+    <script src="../resources/js/jquery-ui.min.js"></script>
+    <script src="../resources/js/rcyjjs/talent.js"></script>
+
+    <title>人才引进</title>
+</head>
+<body>
+<div class="info-panel">
+    <h1>基本信息填写</h1>
+    <form action="" method="post" class="panel-conn panel-conn-short" id="panel_conn">
+        <div class="half-panel">
+            <label>
+                <span>姓名</span>
+                <input type="text" id="name" name="name" class="line-text line-length" placeholder="姓名">
+            </label>
+            <label>
+                <span>性别</span>
+                <span>男 <input id="male" type="radio" name="sex" value="男"></span>
+                <span>女 <input id="female" type="radio" name="sex" value="女"></span>
+            </label>
+            <label>
+                <span>籍贯</span>
+                <input type="text" id="native" name="native" class="line-text line-length" placeholder="籍贯">
+            </label>
+            <label>
+                <span>民族</span>
+                <input type="text" id="nation" name="nation" class="line-text line-length" placeholder="民族">
+            </label>
+            <label>
+                <span>生日</span>
+                <input type="text" id="birthday" name="birthday" class="line-text line-length" placeholder="2000-10-01">
+            </label>
+            <label>
+                <span>国籍</span>
+                <input type="text" id="nationality" name="nationality" class="line-text line-length" placeholder="国籍">
+            </label>
+            <label>
+                <span>政治面貌</span>
+                <input type="text" id="policy" name="policy" class="line-text line-length" placeholder="政治面貌">
+            </label>
+            <label>
+                <span>健康状态</span>
+                <input type="text" id="health" name="health" class="line-text line-length" placeholder="健康状态">
+            </label>
+            <label>
+                <span>婚姻状况</span>
+                <input type="text" id="marry" name="marry" class="line-text line-length" placeholder="婚姻状态">
+            </label>
+        </div>
+        <!--婚姻状况、身高、最高学历、外语情况、联系方式、身份证号码、档案所在地，申请职位名称。 -->
+        <div class="half-panel">
+            <label>
+                <span>身高</span>
+                <input type="number" id="height" name="height" class="line-text line-length" placeholder="身高">
+            </label>
+            <label>
+                <span>最高学历</span>
+                <input type="text" id="learn" name="learn" class="line-text line-length" placeholder="最高学历">
+            </label>
+            <label>
+                <span>外语情况</span>
+                <input type="text" id="language" name="language" class="line-text line-length" placeholder="外语情况">
+            </label>
+            <label>
+                <span>联系方式</span>
+                <input type="text" id="phone" name="phone" class="line-text line-length" placeholder="联系方式">
+            </label>
+            <label>
+                <span>身份证号码</span>
+                <input type="text" id="id_card" name="id_card" class="line-text line-length" placeholder="身份证号码">
+            </label>
+            <label>
+                <span>档案所在地</span>
+                <input type="text" id="place" name="place" class="line-text line-length" placeholder="档案所在地">
+            </label>
+            <label>
+                <span>申请职位名称</span>
+                <input type="text" id="job" name="job" class="line-text line-length" placeholder="职位名称">
+            </label>
+            <button id="next_1" type="button" class="button bt-orange bt-left">下一步</button>
+        </div>
+        <!-- 起止时间、学校名称、学科专业、导师、获学位情况及培养方式。 -->
+        <div class="panel-big">
+            <div class="panel-row-mid">
+                <div class="panel-col-big">起止时间</div>
+                <div class="panel-col-big">学校名称</div>
+                <div class="panel-col-mid">学科专业</div>
+                <div class="panel-col-mid">导师</div>
+                <div class="panel-col-big">获学位情况及培养方式</div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="learn_start_end_time" title="起始时间" class="line-text" id="learn_start_end_time1"  placeholder="2000/10/2~2001/10/2">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="school" title="学校名称" class="line-text" id="school1">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="major" title="学科专业" class="line-text" id="major1">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="teacher" title="导师" class="line-text" id="teacher1">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="degree_way" title="获学位情况及培养方式" class="line-text" id="degree_way1">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="learn_start_end_time" title="起始时间" class="line-text" id="learn_start_end_time2">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="school" title="学校名称" class="line-text" id="school2">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="major" title="学科专业" class="line-text" id="major2">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="teacher" title="导师" class="line-text" id="teacher2">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="degree_way" title="获学位情况及培养方式" class="line-text" id="degree_way2">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="learn_start_end_time" title="起始时间" class="line-text" id="learn_start_end_time3">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="school" title="学校名称" class="line-text" id="school3">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="major" title="学科专业" class="line-text" id="major3">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="teacher" title="导师" class="line-text" id="teacher3">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="degree_way" title="获学位情况及培养方式" class="line-text" id="degree_way3">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="learn_start_end_time" title="起始时间" class="line-text" id="learn_start_end_time4">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="school" title="学校名称" class="line-text" id="school4">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="major" title="学科专业" class="line-text" id="major4">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="teacher" title="导师" class="line-text" id="teacher4">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="degree_way" title="获学位情况及培养方式" class="line-text" id="degree_way4">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="learn_start_end_time" title="起始时间" class="line-text" id="learn_start_end_time5">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="school" title="学校名称" class="line-text" id="school5">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="major" title="学科专业" class="line-text" id="major5">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="teacher" title="导师" class="line-text" id="teacher5">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="degree_way" title="获学位情况及培养方式" class="line-text" id="degree_way5">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="learn_start_end_time" title="起始时间" class="line-text" id="learn_start_end_time6">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="school" title="学校名称" class="line-text" id="school6">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="major" title="学科专业" class="line-text" id="major6">
+                </div>
+                <div class="panel-col-mid">
+                    <input type="text" name="teacher" title="导师" class="line-text" id="teacher6">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="degree_way" title="获学位情况及培养方式" class="line-text" id="degree_way6">
+                </div>
+            </div>
+            <button type="button" id="next_2" class="button bt-orange bt-right">下一步</button>
+            <button type="button" id="pre_1" class="button bt-orange bt-right">上一步</button>
+        </div>
+        <!-- 起止时间、单位名称、专业技术职称、行政职务。 -->
+        <div class="panel-big">
+            <div class="panel-row-mid">
+                <div class="panel-col-big">起止时间</div>
+                <div class="panel-col-big">单位名称</div>
+                <div class="panel-col-big">专业技术职称</div>
+                <div class="panel-col-big">行政职务</div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="job_start_end_time" title="起始时间" class="line-text" id="job_start_end_time1">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="unit" title="单位名称" class="line-text" id="unit1">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="technical" title="专业技术职称" class="line-text" id="technical1">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="policy_job" title="行政职务" class="line-text" id="policy_job1">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="job_start_end_time" title="起始时间" class="line-text" id="job_start_end_time2">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="unit" title="单位名称" class="line-text" id="unit2">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="technical" title="专业技术职称" class="line-text" id="technical2">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="policy_job" title="行政职务" class="line-text" id="policy_job2">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="job_start_end_time" title="起始时间" class="line-text" id="job_start_end_time3">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="unit" title="单位名称" class="line-text" id="unit3">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="technical" title="专业技术职称" class="line-text" id="technical3">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="policy_job" title="行政职务" class="line-text" id="policy_job3">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="job_start_end_time" title="起始时间" class="line-text" id="job_start_end_time4">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="unit" title="单位名称" class="line-text" id="unit4">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="technical" title="专业技术职称" class="line-text" id="technical4">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="policy_job" title="行政职务" class="line-text" id="policy_job4">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="job_start_end_time" title="起始时间" class="line-text" id="job_start_end_time5">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="unit" title="单位名称" class="line-text" id="unit5">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="technical" title="专业技术职称" class="line-text" id="technical5">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="policy_job" title="行政职务" class="line-text" id="policy_job5">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="job_start_end_time" title="起始时间" class="line-text" id="job_start_end_time6">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="unit" title="单位名称" class="line-text" id="unit6">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="technical" title="专业技术职称" class="line-text" id="technical6">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="policy_job" title="行政职务" class="line-text" id="policy_job6">
+                </div>
+            </div>
+            <div class="panel-row-big">
+                <div class="panel-col-big">
+                    <input type="text" name="job_start_end_time" title="起始时间" class="line-text" id="job_start_end_time7">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="unit" title="单位名称" class="line-text" id="unit7">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="technical" title="专业技术职称" class="line-text" id="technical7">
+                </div>
+                <div class="panel-col-big">
+                    <input type="text" name="policy_job" title="行政职务" class="line-text" id="policy_job7">
+                </div>
+            </div>
+            <button type="button" id="rcyjsubmit" class="button bt-orange bt-right">提交</button>
+            <button type="button" id="pre_2" class="button bt-orange bt-right">上一步</button>
+        </div>
+    </form>
+</div>
+
+<script src="../resources/js/rcyjjs/addrcyjinfo.js"></script>
+
+</body>
+</html>
+

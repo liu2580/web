@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jskj.ssm.mapper.RcyjinfoMapper">
+
+
+    <insert id="addRcyjinfo" parameterType="com.jskj.ssm.model.Rcyjinfo">
+        insert into rcyjbasicinfo  (fullName,gender,nativePlace,nation,dateOfBirth,nationality,politicalStatus,healthCondition,maritalCondition,height,highestEducation,foreignLanguageSituation,contactInfo,IDCardNo,application,locationOfFile,education,experience)
+        values (#{fullName},#{gender},#{nativePlace},#{nation},#{dateOfBirth},#{nationality},#{politicalStatus},#{healthCondition},#{maritalCondition},#{height},#{highestEducation},#{foreignLanguageSituation},#{contactInfo},#{IDCardNo},#{application},#{locationOfFile},#{education},#{experience});
+    </insert>
+
+    <!--<insert id="addRcyjinfo" parameterType="com.jskj.ssm.model.Rcyjinfo">-->
+        <!--insert into rcyjbasicinfo (fullName,gender,nativePlace,nation)-->
+        <!--values (#{fullName},#{gender},#{nativePlace},#{nation});-->
+    <!--</insert>-->
+
+
+
+
+</mapper>

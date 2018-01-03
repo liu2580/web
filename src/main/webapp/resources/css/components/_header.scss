@@ -1,0 +1,89 @@
+// Header
+//
+// top show the logo , option, and search
+
+.header-outer{
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url($base-image_url-281 + $header-back-image);
+    background-repeat: repeat;
+    background-position: center;
+
+    .header{
+        margin: $zero-var auto;
+        padding: {
+            top: $header-padding-top;
+            left: $zero-var;
+            right: $zero-var;
+            bottom: $zero-var;
+        }
+        width: $header-width;
+        height: $header-height;
+
+        .header__logo_box{
+            width: $logo_box-width;
+            float: left;
+            overflow: hidden;
+
+            .header__logo{
+                height: $logo-height;
+                width: $logo-width;
+            }
+        }
+
+        .header__right{
+            float: right;
+            height: $header-height;
+
+            .header__option{
+                font-family: $font-family-global;
+                font-size: $font-size-top;
+                color: $font-color-white;
+                text-align: right;
+
+                a {
+                    color: inherit;
+                }
+                a:hover{
+                    color: $a-color-active;
+                }
+            }
+
+            .header__search{
+                height: $search-height;
+                width: $search-width;
+                margin: $zero-var;
+                padding: {
+                    top: $search-padding;
+                    bottom: $search-padding;
+                    left: $zero-var;
+                    right: $zero-var;
+                }
+
+                .search_box{
+                    height: $search-height - 2 * $search-padding;
+                    margin: $zero-var;
+                    width: $search-box-width;
+                    line-height: $search-height - 2 * $search-padding;
+                    border: 0;
+                    padding: {
+                        left: $search-box-padding-left;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                    }
+                    background-color: $search-box-color;
+                    float: left;
+                }
+
+                .search_button{
+                    width: 64px;
+                    height: $search-height - 2 * $search-padding;
+                    float: left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/project.css">
+
+    <script src="../resources/js/jquery-3.2.1.min.js"></script>
+    <script src="../resources/js/jquery-ui.min.js"></script>
+    <script src="../resources/js/xmyj/projecthome.js"></script>
+
+    <title>项目申报</title>
+</head>
+<body>
+    <div class="pro-panel">
+        <h1 id="title">个人信息</h1>
+
+        <div class="pro-conn" id="pro_conn">
+            <div class="pro-page-private">
+                <form action="" method="post">
+                    <label>
+                        <span>姓名</span>
+                        <input type="text" id="name" name="name" class="line-text line-length" placeholder="姓名">
+                    </label>
+                    <label>
+                        <span>创办企业名称</span>
+                        <input type="text" id="enterprise" name="enterprise" class="line-text line-length" placeholder="创办企业名称">
+                    </label>
+                    <label>
+                        <span>项目名称</span>
+                        <input type="text" id="project" name="project" class="line-length line-text" placeholder="项目名称">
+                    </label>
+                    <label>
+                        <span>企业注册时间</span>
+                        <input type="text" id="enroll" name="enroll" class="line-text line-length" placeholder="企业注册时间">
+                    </label>
+                    <label>
+                        <span>单位地址</span>
+                        <input type="text" id="address" name="address" class="line-text line-length" placeholder="单位地址">
+                    </label>
+                    <label>
+                        <span>联系人</span>
+                        <input type="number" id="phone" name="phone" class="line-text line-length" placeholder="手机号">
+                    </label>
+                    <label>
+                        <span>e-mail</span>
+                        <input type="email" id="email" name="email" class="line-length line-text" autocomplete="on" placeholder="邮箱">
+                    </label>
+                    <label>
+                        <span>申报日期</span>
+                        <input type="text" id="apply_date" class="line-text line-length" placeholder="日期/月份/年份">
+                    </label>
+                    <label>
+                        <button type="button" id="cancel" class="button bt-orange bt-length">取消</button>
+                        <button type="button" id="next_1" class="button bt-orange bt-length">下一步</button>
+                    </label>
+                </form>
+            </div>
+
+            <div class="pro-page-notice">
+                <p>一、申报书内容要逐项填写，实际内容不发生的，请注明“无”。有字数限制的，应控制在限定字数以内。</p>
+                <p>二、申报书第一部分“基本情况”中，“取得学历（学位）和资质证书”一栏，有关学历（学位）证书只填写最高学历（学位）。</p>
+
+
+                <button type="button" id="next_2" class="button bt-orange right-button" >下一步</button>
+                <button type="button" id="pre_1" class="button bt-orange right-button">上一步</button>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

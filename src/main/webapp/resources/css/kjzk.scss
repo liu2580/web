@@ -1,0 +1,137 @@
+//utils
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/normalize";
+@import "./utils/mixin";
+
+//Component
+@import "./components/header";
+@import "./components/menu";
+@import "./components/footer";
+
+.zk-logo{
+    margin: auto;
+    display: block;
+    height: 80px;
+}
+
+.zk-container{
+
+    width: 1010px;
+    height: 470px;
+    font-family: $font-family-global;
+    margin: {
+        top: 10px;
+        left: auto;
+        right: auto;
+    };
+}
+
+.zk-grid-left{
+    width: 460px;
+    height: 460px;
+    float: left;
+}
+
+.zk-grid-right{
+    width: 540px;
+    height: 460px;
+    float: right;
+}
+
+.zk-box{
+    height: 460px;
+    width: 460px;
+
+    >.zk-title{
+        height: 50px;
+        width: inherit;
+        line-height: 50px;
+
+        >.zk-ttl-left{
+            float: left;
+            font: {
+                size: 26px;
+                weight: bold;
+            };
+            color: $news-text-color;
+        }
+
+        >.zk-more{
+            float: right;
+            font: {
+                size: 16px;
+            };
+
+            a{
+                color: $news-text-color;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    >.zk-content{
+        height: 400px;
+        line-height: 30px;
+        width: inherit;
+
+        font: {
+            size: 16px;
+        };
+
+        margin: {
+            top: 10px;
+            left: auto;
+            right: auto;
+        };
+
+        >ul>li {
+            list-style: inside disc;
+
+            a{
+                color: black;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.zk-img-box{
+    float: right;
+    height: 449px;
+    width: 124px;
+    margin-left: 10px;
+    position: relative;
+
+    .zk-img-hidden{
+        position: absolute;
+    }
+
+    >.zk-img-show{
+        position: absolute;
+
+        img {
+            opacity: 1;
+            transition: opacity 500ms linear;
+            -moz-transition: opacity 500ms linear;
+            -webkit-transition: opacity 500ms linear;
+            -o-transition: opacity 500ms linear;
+            &:hover{
+                opacity: 0;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+

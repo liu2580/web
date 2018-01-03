@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/project.css">
+    <script src="../resources/js/jquery-3.2.1.min.js"></script>
+    <script src="../resources/js/jquery-ui.min.js"></script>
+    <script src="../resources/js/xmyj/person.js"></script>
+    <title>基本情况</title>
+</head>
+<body>
+<div class="pro-panel">
+    <h1>基本情况</h1>
+    <div class="pro-conn" id="pro_conn">
+        <form action="" method="post">
+            <div class="pro-page-table">
+                <table>
+                    <tr>
+                        <td><label for="tb_name">姓名</label></td>
+                        <td><input type="text" id="tb_name" name="tb_name"></td>
+                        <td><label for="tb_sex">性别</label></td>
+                        <td><input type="text" id="tb_sex" name="tb_sex"></td>
+                        <td><label for="tb_birthday">出生日期</label> </td>
+                        <td><input type="text" id="tb_birthday" name="tb_birthday"></td>
+                        <td rowspan="3">这里放图片</td>
+                    </tr>
+                    <tr>
+                        <td><label for="tb_native">籍贯</label></td>
+                        <td><input type="text" id="tb_native" name="tb_native"></td>
+                        <td><label for="tb_academic">学位</label> </td>
+                        <td><input type="text" id="tb_academic" name="tb_academic"></td>
+                        <td><label for="tb_job">职称</label></td>
+                        <td><input type="text" id="tb_job" name="tb_job"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tb_major">专业领域</label></td>
+                        <td><input type="text" id="tb_major" name="tb_major"></td>
+                        <td><label for="tb_permit">执业资格</label></td>
+                        <td><input type="text" id="tb_permit" name="tb_permit"> </td>
+                        <td><label for="tb_aboard">海外经历</label> </td>
+                        <td><input type="text" id="tb_aboard" name="tb_aboard"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tb_pre_workplace">前工作地</label> </td>
+                        <td><input type="text" id="tb_pre_workplace" name="tb_pre_workplace"></td>
+                        <td><label for="tb_time">时间</label></td>
+                        <td><input type="text" id="tb_time" name="tb_time"></td>
+                        <td><label for="tb_full_time">是否全职</label></td>
+                        <td colspan="2"><input type="text" id="tb_full_time" name="tb_full_time"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tb_now_workplace">现工作单位</label></td>
+                        <td colspan="3"><input type="text" id="tb_now_workplace" name="tb_now_workplace"></td>
+                        <td><label for="tb_phone">联系电话</label> </td>
+                        <td colspan="2"><input type="text" id="tb_phone" name="tb_phone"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tb_id">身份证或护照</label></td>
+                        <td colspan="3"><input type="text" id="tb_id" name="tb_id"></td>
+                        <td><label for="tb_email">E-mail</label></td>
+                        <td colspan="2"><input type="email" id="tb_email" name="tb_email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">学习和工作经历</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">起止时间</td>
+                        <td colspan="3">学校或工作单位</td>
+                        <td colspan="2">职务</td>
+                    </tr>
+                    <!-- 学习和工作经历 -->
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_experience_time" title="起止时间"></td>
+                        <td colspan="3"><input type="text" name="tb_experience_unit" title="学校或工作单位"></td>
+                        <td colspan="2"><input type="text" name="tb_experience_job" title="职务"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_experience_time" title="起止时间"></td>
+                        <td colspan="3"><input type="text" name="tb_experience_unit" title="学校或工作单位"></td>
+                        <td colspan="2"><input type="text" name="tb_experience_job" title="职务"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_experience_time" title="起止时间"></td>
+                        <td colspan="3"><input type="text" name="tb_experience_unit" title="学校或工作单位"></td>
+                        <td colspan="2"><input type="text" name="tb_experience_job" title="职务"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_experience_time" title="起止时间"></td>
+                        <td colspan="3"><input type="text" name="tb_experience_unit" title="学校或工作单位"></td>
+                        <td colspan="2"><input type="text" name="tb_experience_job" title="职务"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_experience_time" title="起止时间"></td>
+                        <td colspan="3"><input type="text" name="tb_experience_unit" title="学校或工作单位"></td>
+                        <td colspan="2"><input type="text" name="tb_experience_job" title="职务"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_experience_time" title="起止时间"></td>
+                        <td colspan="3"><input type="text" name="tb_experience_unit" title="学校或工作单位"></td>
+                        <td colspan="2"><input type="text" name="tb_experience_job" title="职务"></td>
+                    </tr>
+                    <!-- 学习和工作经历结束 -->
+                    <!-- 取得学历(学位)和资格证书情况 -->
+                    <tr>
+                        <td colspan="7">取得学历（学位）和资质证书情况</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">取得时间</td>
+                        <td colspan="3">证书名称</td>
+                        <td colspan="2">发证机关</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_permit_time" title="取得时间"></td>
+                        <td colspan="3"><input type="text" name="tb_permit_name" title="证书名称"></td>
+                        <td colspan="2"><input type="text" name="tb_permit_unit" title="发证机关"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_permit_time" title="取得时间"></td>
+                        <td colspan="3"><input type="text" name="tb_permit_name" title="证书名称"></td>
+                        <td colspan="2"><input type="text" name="tb_permit_unit" title="发证机关"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_permit_time" title="取得时间"></td>
+                        <td colspan="3"><input type="text" name="tb_permit_name" title="证书名称"></td>
+                        <td colspan="2"><input type="text" name="tb_permit_unit" title="发证机关"></td>
+                    </tr>
+                    <!-- 取得学历(学位)和资格证书情况结束 -->
+                    <!-- 实施创新的科技成果所拥有的资助知识产权情况 -->
+                    <tr>
+                        <td colspan="7">实施创新的科技成果所拥有的资助知识产权情况</td>
+                    </tr>
+                    <tr>
+                        <td>取得时间</td>
+                        <td colspan="2">名称</td>
+                        <td colspan="2">专利或著作权号</td>
+                        <td colspan="2">本人权益</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_privacy_time" title="取得时间"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_name" title="名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_privacy_number" title="专利或著作权号"></td>
+                        <td colspan="2"><input type="text" name="tb_privacy_power" title="本人权益"></td>
+                    </tr>
+                    <!-- 实施创新的科技成果所拥有的资助知识产权情况结束 -->
+                    <tr>
+                        <td colspan="7">获国家、省、市、去奖励情况</td>
+                    </tr>
+                    <tr>
+                        <td>取得时间</td>
+                        <td colspan="2">奖励名称</td>
+                        <td colspan="2">颁奖单位</td>
+                        <td colspan="2">获奖排名</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tb_reward_time" title="取得时间"> </td>
+                        <td colspan="2"><input type="text" name="tb_reward_name" title="奖励名称"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_unit" title="颁奖单位"> </td>
+                        <td colspan="2"><input type="text" name="tb_reword_number" title="获奖排名"> </td>
+                    </tr>
+                </table>
+                <button type="button" id="pre_1" class="button bt-orange table_button">上一步</button>
+                <button type="button" id="next_1" class="button bt-orange table_button">下一步</button>
+            </div>
+            <div class="pro-page-table">
+                <div class="info_table">
+                    <div class="info_title">以往从事研究开发或技术工作经历及业绩介绍</div>
+                    <div class="info_append">主要介绍以往作为主要完成人承担有关研究开发任务的情况，
+                        包括在其中所发挥的作用、所取得成果的技术水平和经济效益。限1500字</div>
+                    <textarea class="info_content" name="tb_work_history" title="以往从事研究开发或技术工作经历及业绩介绍"></textarea>
+                </div>
+                <button type="button" id="pre_2" class="button bt-orange table_button">上一步</button>
+                <button type="button" id="next_2" class="button bt-orange table_button">下一步</button>
+            </div>
+            <div class="pro-page-table">
+                <div class="info_table">
+                    <div class="info_title">实施创业的科技成果水平、知识产权情况及本人近三年的创业设想与愿景</div>
+                    <div class="info_append">限800字</div>
+                    <textarea class="info_content" name="tb_plan_dream" title="实施创业的科技成果水平、知识产权情况及本人近三年的创业设想与愿景"></textarea>
+                </div>
+                <button type="button" id="pre_3" class="button bt-orange table_button">上一步</button>
+                <button type="submit" id="next_3" class="button bt-orange table_button">下一步</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

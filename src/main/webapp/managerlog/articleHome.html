@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css">
+    <script src="../resources/js/jquery-3.2.1.min.js"></script>
+    <script src="../resources/js/jquery-ui.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<h1>文章管理</h1>
+<div id="divTable">
+</div>
+
+<div >
+    <table>
+
+        <tr>
+            <td><label>标题：</label></td>
+            <td>
+                <input name="artTitle" type="email" class="mini-textbox"  id="artTitle" required="true" requiredErrorText="标题不能为空"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label>时间：</label></td>
+            <td>
+                <input name="artDate" type="email" class="mini-textbox"  id="artDate" required="true" requiredErrorText="时间不能为空" />
+            </td>
+        </tr>
+        <tr>
+            <td><label>类型：</label></td>
+            <td>
+                <select id="artType">
+                    <option value="1">要闻快递</option>
+                    <option value="2">通知公告</option>
+                    <option value="3">活动预告</option>
+                    <option value="4">头条新闻</option>
+                    <option value="5">市县研究中心</option>
+                    <option value="6">特别关注</option>
+                    <option value="7">深化改革</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>内容：</label></td>
+            <td>
+
+                <textarea class="multi-line" name="tb_project_description"  id="artText"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label>图片：</label></td>
+            <td>
+                <input name="artPicturePath"  class="mini-textbox"  id="artPicturePath" required="true" />
+            </td>
+        </tr>
+        <tr>
+            <td><label>url：</label></td>
+            <td>
+                <input name="artURL"  class="mini-textbox"  id="artURL" required="true"  />
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <td><label>作者：</label></td>
+            <td>
+                <input name="artAuthor"  class="mini-textbox"  id="artAuthor" required="true" />
+            </td>
+        </tr>
+        <tr>
+            <td><label>编辑：</label></td>
+            <td>
+                <input name="artEditor"  class="mini-textbox"  id="artEditor" required="true"  />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input value="添加" type="button" name="addArticle" id="addArticle" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div >
+    <table>
+
+        <tr>
+
+            <td>
+                <input name="selectartId" vtype="email" class="mini-textbox"  id="selectartId" required="true" requiredErrorText="标题不能为空"/>
+            </td>
+            <td>
+                <input value="查询Id" type="button" name="SelectById" id="SelectById" />
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+
+<div >
+    <table>
+
+        <tr>
+
+            <td>
+                <input name="selectartType" vtype="email" class="mini-textbox"  id="selectartType" required="true" requiredErrorText="标题不能为空"/>
+            </td>
+            <td>
+                <input value="查询type" type="button" name="SelectByType" id="SelectByType" />
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../resources/js/user/showArticle.js"></script>
+<script>
+    getallarticles();
+</script>
+
+</body>
+</html>

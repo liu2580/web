@@ -1,0 +1,25 @@
+//scss code for path
+
+.path{
+
+    margin: auto;
+    padding: {
+        top: $path-padding-top;
+    };
+
+    height: $path-height;
+    width: $path-width;
+    border-bottom: $path-bottom-border;
+
+    a{
+        text-align: left;
+        font: {
+            size: $font-size-path;
+            family: $font-family-path;
+        };
+        color: $path-font-color;
+    };
+    a:hover{
+        text-decoration: underline;
+    }
+}

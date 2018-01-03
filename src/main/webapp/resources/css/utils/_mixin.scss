@@ -1,0 +1,424 @@
+//mixin file
+
+
+@mixin card-col{
+    float: left;
+    width: $card-width;
+    height: $card-height;
+    padding: {
+        top: $card-col-padding-vertical;
+        bottom: $card-col-padding-vertical;
+    };
+}
+
+@mixin row($row-height){
+    height: $row-height;
+    width: $container-width;
+    margin: auto;
+    padding-top: $rows-padding-top;
+}
+
+@mixin title($t-h, $t-w){
+    height: $t-h;
+    width: $t-w;
+    line-height: $t-h;
+    box-sizing: border-box;
+    padding: {
+        left: 5px;
+        right: 5px;
+    };
+
+    border-bottom: 1px solid #a6c7fd;
+}
+
+@mixin mix-news($n-w, $n-h){
+    width: $n-w;
+    height: $n-h;
+
+    .news__title{
+        height: $news-title-height;
+        width: $n-w;
+        border-bottom: $news-title-border;
+
+        .news__title-left{
+            float: left;
+            line-height: $news-title-height;
+            text-align: center;
+            background-color: $news-color-blue;
+            width: $news-title-left-width;
+            font: {
+                family: $font-family-title;
+                size: $font-size-title;
+
+            };
+            color: white;
+        }
+
+        .news__title-right{
+            float: right;
+            text-align: right;
+            height: $news-title-height;
+            line-height: $news-title-height;
+        }
+    }
+
+    .news__content{
+        height: $n-h - $news-title-height;
+        width: $n-w;
+        box-sizing: border-box;
+        padding-top: $news-content-padding-top;
+        font: {
+            family: $font-family-global;
+            size: $font-size-subtitle;
+        };
+        color: $news-text-color;
+
+        .news__content-left{
+            float: left;
+            width: $news-content-left-width;
+            height: inherit;
+            text-align: left;
+        }
+
+        .news__content-right{
+            float: right;
+            text-align: right;
+            width: $news-content-right-width;
+            height: inherit;
+        }
+    }
+
+    a{
+        color: $news-text-color;
+    }
+
+    a:hover{
+        color: red;
+    }
+
+    li{
+        height: 30px;
+        line-height: 30px;
+    }
+}
+
+
+@mixin title-right($h, $w, $f-size:14px){
+    height: $h;
+    width: $w;
+    float: right;
+    text-align: right;
+    font: {
+        size: $f-size;
+        family: $font-family-global;
+    };
+
+    a{
+        color: $news-text-color;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+@mixin title-left($h, $w, $f-size:14px){
+    float: left;
+    text-align: left;
+    font: {
+        weight: bold;
+        size: $f-size;
+        family: $font-family-title;
+    };
+    color: #308fe1;
+}
+
+@mixin title-left-b($h, $w, $f-size:14px){
+
+    height: $h;
+    width: $w;
+
+    float: left;
+    text-align: left;
+    background-color: #0f77c7;
+    border-radius: 0 10px 10px 0;
+    font: {
+        weight: bold;
+        size: 14px;
+        family: $font-family-title;
+    };
+    color: white;
+}
+
+@mixin box-b($h, $w,$bgc:#f5f8fd){
+    height: $h;
+    width: $w;
+    border:1px solid #adcbf1;
+    background-color: $bgc;
+}
+
+@mixin list-left($h, $w, $list-style-type: none){
+    float: left;
+    height: $h;
+    width: $w;
+    font: {
+        size: 14px;
+    };
+
+    >ul>li{
+        line-height: 22px;
+        list-style-position: inside;
+        list-style-type: $list-style-type;
+        padding-left: 0;
+        a{
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+    }
+}
+
+@mixin list-right($h, $w){
+    float: right;
+    height: $h;
+    width: $w;
+    font: {
+        size: 14px;
+    };
+
+    >ul>li{
+        line-height: 22px;
+    }
+}
+
+@mixin mix-img-title{
+    height: 43px;
+    line-height: 43px;
+    width: 424px;
+    margin: auto;
+
+    >.img-t-l{
+        @include title-left(43px, 120px, 18px);
+    }
+    >.img-t-r{
+        @include title-right(43px, 55px);
+    }
+}
+
+@mixin mix-img-box{
+    box-sizing: border-box;
+    width: 434px;
+    height: inherit;
+
+    >.img-title{
+        @include mix-img-title;
+    }
+
+    >.img-ctn{
+        height: 190px - 43px;
+        width: 434px - 14px;
+        line-height: 190px - 43px;
+
+        img{
+            width: 431px;
+            height: 131px;
+        }
+    }
+}
+
+@mixin mix-kj-box-f($flt: 0){
+    background-color: white;
+    height: $kj-h-m;
+    padding: 0 8px 8px 8px;
+    box-sizing: border-box;
+
+    @if $flt == left or $flt == right {
+        width: $kj-w-1;
+        float: $flt;
+    } @else {
+        width: $container-width;
+    }
+}
+
+@mixin mix-kj-t($type){
+    height: 41px;
+    line-height: 41px;
+    @if $type == 1 {
+        width: $kj-w-1 - 15px;
+    } @else if $type == 2 {
+        width: $container-width - 15px;
+    } @else {
+        @warn "There is not such type";
+    };
+    border-bottom: 1px solid #0f77c7;
+    position: relative;
+    >.kj-tl-l{
+        height: 41px;
+        width: 125px;
+        float: left;
+        text-align: left;
+        font: {
+            weight: bold;
+            size: 16px;
+        };
+        color: $news-text-color;
+
+        >.txt-org{
+            color: orange;
+        }
+    }
+
+    >.kj-tl-r{
+        height: inherit;
+        width: 70px;
+        text-align: right;
+        float: right;
+        a{
+            font-size: 14px;
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+    }
+}
+
+@mixin mix-kj-ctn($flt){
+    @if $flt == left or $flt == right{
+        float: $flt;
+    } @else {
+        @warn "parameter must be float type";
+    }
+    height: $kj-h-m - $kj-t-h;
+    font: {
+        size: 14px;
+    };
+    color: black;
+    width: $kj-w-1 - 15px;
+
+    >.kj-ctn-img-left{
+        width: 150px;
+        height: $kj-h-m - $kj-t-h;
+        box-sizing: border-box;
+        line-height: $kj-h-m - $kj-t-h;
+        text-align: left;
+        float: left;
+        padding: {
+            left: 20px;
+            top: 15px;
+        };
+    }
+
+    >.kj-ctn-txt-right{
+        width: 410px;
+        height: $kj-h-m - $kj-t-h;
+        box-sizing: border-box;
+        float: right;
+        line-height: 25px;
+        text-align: left;
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+    >.kj-ctn-img-list-vrt{
+        box-sizing: border-box;
+        padding-top: 15px;
+        padding-left: 80px;
+        width: inherit;
+        height: ($kj-h-m - $kj-t-h) / 2;
+
+    }
+    >.kj-ctn-img-list-hrz{
+        float: left;
+        width: inherit;
+        height: 70px;
+        box-sizing: border-box;
+        border-top: 1px dashed #a6c7fd;
+        padding: {
+            top: 20px;
+            left: 60px;
+        };
+        margin-top: 10px;
+    }
+
+    >.kj-ctn-list-left{
+        width: 430px;
+        line-height: 25px;
+        float: left;
+        text-align: left;
+
+        .txt-org{
+            color: orange;
+            font-weight: bold;
+        }
+
+        a{
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+    }
+    >.kj-ctn-list-right{
+        line-height: 25px;
+        width: 80px;
+        float: right;
+        text-align: right;
+    }
+
+    >.kj-ctn-line-red{
+        color: red;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 15px;
+
+        p, img{
+            float: left;
+        }
+    }
+
+    >.kj-ctn-line-black{
+        color: black;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 15px;
+
+        p, img{
+            float: left;
+            >.txt-green{
+                color: green;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@mixin mix-kj-sub-item-show{
+    float: left;
+    height: inherit;
+    box-sizing: border-box;
+    font: {
+        size: 14px;
+    }
+    text-align: center;
+    color: white;
+    border: 1px solid blue;
+    background-color: #5ea0dc;
+    border-bottom: 1px solid white;
+}
+
+@mixin mix-kj-sub-item-hide{
+    float: left;
+    height: inherit;
+    box-sizing: border-box;
+    font: {
+        size: 14px;
+    }
+    text-align: center;
+    background-color: #c0e3f5;
+    color: $news-text-color;
+    border: 1px solid #0f77c7;
+}
+

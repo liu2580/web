@@ -1,0 +1,14 @@
+
+.news{
+    @include mix-news($news-width, $news-height);
+}
+
+.news-l{
+    float: left;
+    @include mix-news(446px, 248px);
+}
+
+.news-r{
+    float: right;
+    @include mix-news(446px, 248px);
+}

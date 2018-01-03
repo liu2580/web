@@ -1,0 +1,244 @@
+
+//
+// Variables
+// --------------------------------------------------
+
+
+// Default var
+//
+// ------------------------------------------------------
+$zero-var: 0;
+$ten-var: 10px;
+$inside-row-width: 1270px;
+$margin-center: 0 auto;    //for center inside
+$line-height:5px;
+
+//URL
+//
+//## base url for inputting image
+
+$base-image-url-1:      "../images/1/";
+$base-image-url-3:      "../images/3/";
+$base-image-url-4:      "../images/4/";
+$base-image-url-61:     "../images/61/";
+$base-image-url-181:    "../images/181/";
+$base-image-url-201:    "../images/201/";
+$base-image-url-241:    "../images/241/";
+$base-image-url-242:    "../images/242/";
+$base-image-url-261:    "../images/261/";
+$base-image_url-281:    "../images/281/";
+
+$base-picture-url-0:    "../picture/0/";
+$base-picture-url-1:    "../picture/1/";
+
+//Color
+//
+//## color use in all pages
+
+//a-color
+$a-color-active: red;
+$news-color-blue: #0b6ab2;
+
+//font-color
+$font-color-blue: blue;
+$font-color-white: white;
+$font-color-grey: grey;
+
+
+//Font
+//
+//## font size, family and weight
+
+//font-family
+$font-family-global: "宋体", Tahoma, verdana, sans-serif;
+$font-family-ad: Microsoft YaHei, sans-serif;
+$font-family-path: Microsoft YaHei, sans-serif;
+$font-family-card: Microsoft YaHei, sans-serif;
+$font-family-title: Microsoft YaHei, sans-serif;
+
+//font-size
+$font-size-top: 14px;
+$font-size-menu: 18px;
+$font-size-path: 16px;
+$font-size-ad: 38px;
+$font-size-card-title: 18px;
+$font-size-title: 18px;
+$font-size-subtitle: 14px;
+$font-size-footer: 14px;
+
+//font-weight
+$font-weight-title: bold;
+$font-weight-ad: bold;
+
+
+
+//Container
+//
+// setting for container
+
+//width
+$container-width: $inside-row-width;
+$container-fluid-width: 100%;
+$container-article-width: 998px;
+
+//padding
+$container-padding: 0;
+$container-fluid-padding: 0;
+$container-article-padding: 10px;
+
+//margin zero
+// for letting the contain at the center of body
+$all-container-margin: $zero-var auto;
+
+
+//Row
+//
+// the row is only define in container
+$row-margin-others: 0px;
+
+$row-padding: $zero-var;
+
+//Header
+//
+//setting for the header section
+$header-padding-top: $ten-var;
+$header-width: $inside-row-width;
+$header-height: 118px;
+$header-back-image: "skx_01.jpg";
+
+//logo
+$logo_box-width:485px;
+$logo-width: 454px;
+$logo-height: 115px;
+
+//search
+$search-height: 70px;
+$search-width: 340px;
+$search-padding: 19px;
+$search-box-width: 265px;
+$search-box-color: rgb(140, 183, 215);
+$search-box-padding-left: 9px;
+
+
+// Menu
+//
+//## setting for menu
+
+$menu-image: "skx_03.jpg";
+$menu-width: 1200px;
+$menu-height: 43px;
+$menu-item-height: 23px;
+$menu-item-width: 114px;
+$menu-item-image-width: 105px;
+$menu-item-image-height: 43px;
+
+
+//Ad
+//
+//## setting for ad, parent element container
+$ad-padding-left: 10px;
+$ad-margin-top: 10px;
+$ad-total-height: 80px;
+$ad-border: solid 1px #CCCCCC;
+$ad-image-size: 67px;
+$ad-text-height: 50px;
+$ad-text-width: 1082px;
+$ad-text-color: $news-color-blue;
+$ad-distance: 30px;
+
+//Path
+//
+//## setting for path parent element container
+$path-width: 1037px;
+$path-height: 35px;
+$path-padding-top: 10px;
+$path-bottom-border: grey solid 1px;
+$path-font-color: #666666;
+
+//Card
+//
+//## card is used for showing 学会学术信息
+$card-width: 345px;
+$card-height: 230px;
+$card-overflow: hidden;
+$card-title-height: 48px;
+$card-title-background-color: #004a87;
+$card-content-background-color: #f4f4f4;
+$card-content-padding-left: 20px;
+
+//card_row
+//
+//row for containing cards
+$card-col-padding-horizontal: 2px;
+$card-col-padding-vertical: 20px;
+
+
+//footer
+//
+//setting for footer
+$footer-height: 70px;
+$footer-width: $container-width - 200px;
+$footer-border-top: 2px solid blue;
+$footer-border-others: 1px solid #cbe1f4;
+$footer-border-radius-bottom: 7px;
+$footer-text-color: #595757;
+$footer-content-line-height: 20px;
+
+//rows
+$rows-padding-top: 10px;
+$news-rows-height: 300px;
+$panel-rows-height: 225px;
+
+//news
+//
+// setting for all elements relative to news
+
+//news_bar
+$news-bar-height: 290px;
+$news-bar-width: 446px;
+$news-bar-margin-right: 5px;
+
+//news
+$news-width: 446px;
+$news-height: $news-bar-height;
+$news-title-height: 38px;
+$news-title-border: solid 1px #0f73bf;
+$news-title-left-width: 132px;
+$news-title-right-width: 50px;
+$news-text-color: #075793;
+$news-content-height: $news-height - $news-title-height;
+$news-content-padding-top: 8px;
+$news-text-height: 30px;
+$news-content-right-width: 55px;
+$news-content-left-width: $news-width - $news-content-right-width;
+
+
+//ImageBox
+//
+// setting for image box
+$image-box-height: 284px;
+$image-box-width: 446px;
+
+
+// Panel
+//
+//## setting for panel
+$panel-width: $news-bar-width;
+$panel-height: 225px;
+$panel-title-height: 41px;
+$panel-content-height: $panel-height - $panel-title-height;
+$panel-text-height: 30px;
+$panel-border:solid 1px #CCCCCC;
+$panel-title-border:solid 1px #d9d9d9;
+$panel-content-padding-v: 13px;
+$panel-content-padding-h: 3px;
+$panel-left-width: 226px;
+
+//sidebar
+$sidebar-width: 346px;
+
+//side_nav
+//
+//## setting for side nav
+$nav-title-line-length: 50px;
+$nav-content-bg: #333333;

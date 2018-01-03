@@ -1,0 +1,459 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7.5">
+<meta name="keywords" content="" />
+<meta name="description" content="江苏学会网" />
+<title>江苏学会网 - 学会学术 </title>
+<script src='include/js/swfobjectopt.js?t=1513329926'></script>
+
+<script type="text/javascript" src="/include/js/prototype.js?t=1513329926"></script>
+<script type="text/javascript" src="/include/js/ImageSlide.js?t=1513329926"></script>
+<link rel="stylesheet" type="text/css" href="/include/css/ImageSlide.css?t=1513329926">
+<link href="include/css/style_5617.css?t=1513329926" rel="stylesheet" type="text/css" />
+<link href="upload/moban/images/style.css?t=1513329926" rel="stylesheet" type="text/css" />
+
+<style>
+    #pagination-clean ul{
+		border:0; margin:0; padding:0;
+		float:left;
+	}
+	#pagination-digg ul{
+		border:0; margin:0; padding:0;
+		float:left;
+	}
+     #pagination-flickr ul{
+		border:0; margin:0; padding:0;
+		float:left;
+	}
+
+ 	#pagination-clean li{
+		border:0; margin:0; padding:0;
+		font-size:12px;
+		list-style:none;
+		float:left;
+	}
+	#pagination-clean li, #pagination-clean a{
+		margin-right:2px;
+	}
+	#pagination-clean .previous-off,
+	#pagination-clean .next-off {
+		color:#888888;
+		display:block;
+		float:left;
+		font-weight:bold;
+		padding:3px 4px;
+	}	
+	#pagination-clean .next a,
+	#pagination-clean previous a{
+		border:none;
+		font-weight:bold;
+	}	
+	#pagination-clean .active{
+		color:#000000;
+		font-weight:bold;
+		display:block;
+		float:left;
+		padding:4px 6px;
+	}
+	#pagination-clean a:link, 
+	#pagination-clean a:visited {
+		color:#0e509e;
+		display:block;
+		float:left;
+		padding:3px 6px;
+		text-decoration:underline;
+	}
+	#pagination-clean a:hover{
+		text-decoration:none;
+	}
+
+	#pagination-digg li{
+		border:0; margin:0; padding:0;
+		font-size:12px;
+		list-style:none;
+		float:left;
+		margin-right:5px;
+	}
+	#pagination-digg a{
+		border:solid 1px #9aafe5;
+		margin-right:2px;
+	}
+	#pagination-digg .previous-off,
+	#pagination-digg .next-off {
+		border:solid 1px #DEDEDE;
+		color:#888888;
+		display:block;
+		float:left;
+		font-weight:bold;
+		margin-right:2px;
+		padding:3px 4px;
+	}
+	#pagination-digg .next a,
+	#pagination-digg .previous a {
+	 font-weight:bold;
+	}	
+	#pagination-digg .active{
+		background:#2e6ab1;
+		color:#FFFFFF;
+		font-weight:bold;
+		display:block;
+		float:left;
+		padding:4px 6px;
+	}
+	#pagination-digg a:link, 
+	#pagination-digg a:visited {
+		color:#0e509e;
+		display:block;
+		float:left;
+		padding:3px 6px;
+		text-decoration:none;
+	}
+	#pagination-digg a:hover{
+		border:solid 1px #0e509e;
+	}
+
+	#pagination-flickr li{
+		border:0; margin:0; padding:0;
+		font-size:12px;
+		list-style:none;
+		float:left;
+	}
+	#pagination-flickr a{
+		border:solid 1px #DDDDDD;
+		margin-right:2px;
+	}
+	#pagination-flickr .previous-off,
+	#pagination-flickr .next-off {
+		color:#666666;
+		display:block;
+		float:left;
+		font-weight:bold;
+		padding:3px 4px;
+	}
+	#pagination-flickr .next a,
+	#pagination-flickr .previous a {
+		font-weight:bold;
+		border:solid 1px #FFFFFF;
+	}	
+	#pagination-flickr .active{
+		color:#ff0084;
+		font-weight:bold;
+		display:block;
+		float:left;
+		padding:4px 6px;
+	}
+	#pagination-flickr a:link, 
+	#pagination-flickr a:visited {
+		color:#0063e3;
+		display:block;
+		float:left;
+		padding:3px 6px;
+		text-decoration:none;
+	}
+	#pagination-flickr a:hover{
+		border:solid 1px #666666;
+	}
+</style><link href="http://www.jsxhw.org/website/105871/link.css" rel="stylesheet" type="text/css" />
+<script>
+
+var errorMsg='';
+function killErrors(){
+    var arglen=arguments.length;   
+	errorMsg="错误："+arglen+"个\n";   
+    for(var i=0;i<arglen;i++){   
+    errorMsg+="错误"+(i+1)+"："+arguments[i]+"\n";
+	}
+	window.onerror=null;   
+	return true;
+}
+window.onerror = killErrors;
+var a_ba='center';
+var headerheight=0;
+var alltabletop=0;
+var contop=0;
+var all_div_id=['s80116392','s49661048','s34092975','s85705616','s38803223','s61862821','s41051542','s29991493','s29581849','s6600350','s66251653','s2333940'];
+var move_div_id=[];
+var move_div_id1=[];
+var _content_id_a=[];
+var _disappear_id_a=[];
+var _yah_id_a=[];
+var _content_no=0;
+var _content_have=0;
+var _content_id='';
+var c_error=1;
+var json_command_bs='';
+var marqueen_a=[0];	
+var popgg_a=[];
+var floatgg_a=[];
+var coupletsgg_a=[];
+var kefugg_a=[];
+var quanpinggg_a=[];
+var _autoc_id_a=[];
+
+var floatgg_d='';
+var floatgg_s='';
+var link_css='http://www.jsxhw.org/website/105871/link.css';
+
+var _mod='ss3276721';
+var _config_rooturl='http://www.jsxhw.org/';
+var _message_list='';
+var _fix_a=[];
+var _fix_b=[];
+var _fix_c=[];
+var _ya_a=[];
+var _ya_b=[];
+var _muti_roll_a=[''];
+var mod='c';
+var fid='';
+var tid='';
+var _pre_url='mod%3Dss3276721%26md%3Dcf0b587d%26type%3D%26cat%3D';
+var maskDiv=null;
+var winlistDiv=null;
+var BatchDiv=null;
+var ExpdataDiv=null;
+var curObjID="";
+var curObj=null;
+var t_DiglogX,t_DiglogY,t_DiglogW,t_DiglogH;
+
+function isparseInt(v){
+   var v=parseInt(v);
+   if (isNaN(v) || v<0){
+      v=0;
+   }
+   return v;
+}
+</script>
+<script src="include/js/dcode.js"></script>
+<!--[if IE 6]>
+<script src="http://www.jsxhw.org/include/js/iepng.js" type="text/javascript"></script>
+<script type="text/javascript">
+   EvPNG.fix('body, div, ul, img, li, input'); 
+</script>
+<![endif]-->
+
+
+<!--[if lt IE 7]>
+<script src="http://www.jsxhw.org/include/js/IE7.js" type="text/javascript"></script>
+<![endif]-->
+
+
+<style type="text/css">
+body,td,th,div,span {font-family: Arial; LINE-HEIGHT: 1.5;word-wrap: break-word;}
+#bodybackp { width:100%;background-repeat:repeat-x;background-position:50% bottom;left:0px;filter:none;background-color:#ffffff; ;height:100%;}
+
+#guajian1  { position:absolute;left:-92px;z-index:20;display:none;top:7px; }
+#guajian2  { position:absolute;left:5px;z-index:20;display:none;top:5px; }
+#guajian3  { position:absolute;left:5px;z-index:20;display:none;top:5px; }
+#guajian4  { position:absolute;left:5px;z-index:20;display:none;top:5px; }
+#guajian5  { position:absolute;left:5px;z-index:20;display:none;top:5px; }
+#guajian6  { position:absolute;left:5px;z-index:20;display:none;top:5px; }
+#guajian7  { position:absolute;left:5px;z-index:20;display:none;top:5px; }
+#guajian8  { position:absolute;left:5px;z-index:20;display:none;top:5px; }
+
+#nav  { HEIGHT: 48px; WIDTH: 782px; POSITION: absolute; LEFT: 1px; FILTER: none; Z-INDEX: 20; DISPLAY: none; TOP: 187px; lock: 1 }
+#nav_1  { WIDTH: 800px }
+#nav_3  { FONT-SIZE: 14px; FONT-FAMILY: 宋体; COLOR: rgb(255,255,255) }
+#nav_4  { border-left-width:0px;height:47px;border-right-width:0px;border-top-color:rgb(255,255,255);width:98px;border-bottom-width:0px;float:left;border-left-color:rgb(255,255,255);border-bottom-color:rgb(255,255,255);filter:none;margin:5px 0px 0px;border-right-color:rgb(255,255,255);border-top-width:0px; }
+#nav_5  { PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px }
+#nav_6  { FONT-SIZE: 14px; FONT-FAMILY: 宋体; COLOR: rgb(255,255,255) }
+#nav_7  { HEIGHT: 47px; WIDTH: 98px; FLOAT: left; FILTER: none; MARGIN: 0px; BACKGROUND-COLOR: rgb(255,157,3); border-image: none }
+#nav_8  { PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 15px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px }
+#nav_b1  { HEIGHT: 48px; POSITION: absolute; Z-INDEX: -1 }
+#nav_b2  { HEIGHT: 48px; POSITION: absolute; Z-INDEX: -1 }
+#nav_b3  { HEIGHT: 48px; WIDTH: 682px; POSITION: absolute; Z-INDEX: -2 }
+
+#menu       { FONT-SIZE: 16px; HEIGHT: 35px; FONT-FAMILY: 微软雅黑; WIDTH: 988px; BACKGROUND-IMAGE: url(files/105871/1605/x_aee5239162.jpg); BACKGROUND-REPEAT: no-repeat; POSITION: absolute; BACKGROUND-POSITION: 50% bottom; COLOR: #666666; LEFT: 57px; FILTER: none; Z-INDEX: 21; DISPLAY: none; TOP: 181px; lock: 0 ;overflow: hidden;}
+#menu     a { COLOR: #666666; MARGIN-RIGHT: 10px }
+
+#f_con1    { height:110px;width:571px;position:absolute;left:-10px;z-index:15;top:0px; }#f_con2    { height:96px;width:1221px;position:absolute;left:11px;top:8px; }#f_con3    { height:30px;width:232px;position:absolute;left:1032px;z-index:25;top:5px; }
+#bd        { BACKGROUND-COLOR: #ffffff }
+#table_footer { BORDER-TOP: medium none; HEIGHT: 112px; BORDER-RIGHT: medium none; BACKGROUND-REPEAT: repeat-x; BORDER-BOTTOM: medium none; BACKGROUND-POSITION: 50% center; FILTER: none; BORDER-LEFT: medium none;}
+#background_1 {min-height:1px;HEIGHT: 125px; WIDTH: 100%; BACKGROUND-IMAGE: url(files/105871/1701/x_07e16826.jpg); BACKGROUND-REPEAT: no-repeat; POSITION: absolute; BACKGROUND-POSITION: 50% center; LEFT: 0px; Z-INDEX: -1; TOP: 0px; }
+#background_2 {min-height:1px;HEIGHT: 43px; WIDTH: 100%; BACKGROUND-IMAGE: url(files/105871/1701/y_65e16896.png); BACKGROUND-REPEAT: repeat-x; POSITION: absolute; BACKGROUND-POSITION: 50% bottom; LEFT: 0px; Z-INDEX: -1; TOP: 124px;}
+#alltable     { width:1250px;position:absolute;top:0px;; left:50%; margin-left:-625px;; }
+
+
+
+</style>
+
+
+
+</head>
+<BODY  id="bodybackp"  align="center">
+
+
+<div id="alltable">
+<div id="flashscript" style="position:absolute;top:100px; left:0px;width:98%; height:400px; z-index:2" ></div>
+<table  cellpadding="0" cellspacing="0" width="100%" height="100%" style="table-layout:fixed; border-top:0">
+<TR><TD id="table_header" style="BORDER-TOP: medium none; HEIGHT: 125px; BORDER-RIGHT: medium none; BACKGROUND-REPEAT: no-repeat; BORDER-BOTTOM: medium none; BACKGROUND-POSITION: left 50%; FILTER: none; BORDER-LEFT: medium none">&nbsp;</TD></TR>
+<tr><td id="bd"><div id="bd_10" style="HEIGHT: 872px; PADDING-BOTTOM: 13px"></div>
+</td></tr>
+<tr><td id="table_footer" valign="top">
+<div style="position:relative; left:0; top:0px;"><div id="f_con2"><TABLE style="BORDER-BOTTOM: #cbe1f4 1px solid; BORDER-LEFT: #cbe1f4 1px solid; BACKGROUND-COLOR: #f7fbfc; WIDTH: 100%; BORDER-COLLAPSE: collapse; HEIGHT: 84px; BORDER-TOP: #0080c2 5px solid; BORDER-RIGHT: #cbe1f4 1px solid" border=0 cellSpacing=0 borderColor=#999999 cellPadding=3>
+<TBODY>
+<TR>
+<TD style="TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px; FONT-FAMILY: 宋体; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #595757; FONT-SIZE: 14px; VERTICAL-ALIGN: middle; BORDER-LEFT-WIDTH: 0px">版权所有：江苏省科学技术协会</TD></TR>
+<TR>
+<TD style="TEXT-ALIGN: center; FONT-FAMILY: 宋体; COLOR: #595757; FONT-SIZE: 14px; VERTICAL-ALIGN: middle">网站维护：江苏省科协信息中心 联系电话：025 83313187</TD></TR>
+<TR>
+<TD style="TEXT-ALIGN: center; FONT-FAMILY: 宋体; COLOR: #595757; FONT-SIZE: 14px; VERTICAL-ALIGN: middle">苏ICP备05080394号</TD></TR></TBODY></TABLE> </div></div>
+&nbsp;
+</td></tr>
+</table>
+<div align="left" id="nav">
+<div  id="nav_b1"></div>
+<div  id="nav_b2"></div>
+<div  id="nav_b3"></div>
+<div  id="nav_resize" style="display:none" class="oho_resize"></div>
+<div  id="nav_1"><DIV id="nav_4"><DIV id="nav_5"><A id="nav_3"   href="default.php">首页</A></DIV></DIV><DIV id="nav_4"><DIV id="nav_5"><A id="nav_3"   href="default.php?mod=c&s=ssb989fff">走进学会</A></DIV></DIV><DIV id="nav_4"><DIV id="nav_5"><A id="nav_3"   href="default.php?mod=c&s=ss43e91be">提升计划</A></DIV></DIV><DIV id="nav_4"><DIV id="nav_5"><A id="nav_3"   href="default.php?mod=c&s=ssbb5487d">承接职能</A></DIV></DIV><DIV id="nav_4"><DIV id="nav_5"><A id="nav_3"   href="default.php?mod=c&s=ssbbe320d">学术交流</A></DIV></DIV><DIV id="nav_4"><DIV id="nav_5"><A id="nav_3"   href="default.php?mod=c&s=ss43b049e">科技服务</A></DIV></DIV><DIV id="nav_4"><DIV id="nav_5"><A id="nav_3"   href="default.php?mod=c&s=ssb544b4b">组织建设</A></DIV></DIV><DIV id="nav_4"><DIV id="nav_5"><A id="nav_3"   href="default.php?mod=c&s=ss160bdc3">学会党建</A></DIV></DIV></div>
+</div>
+
+<DIV  id="ohid_s80116392" style="HEIGHT: 43px; WIDTH: 1250px; BACKGROUND-IMAGE: url(files/105871/1701/y_65e16896.png); BACKGROUND-REPEAT: repeat-x; POSITION: absolute; BACKGROUND-POSITION: left top; LEFT: 0px; FILTER: none; Z-INDEX: 10; TOP: 124px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s80116392_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s80116392_content"  style=""><TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse; HEIGHT: 43px" border=0 cellSpacing=0 borderColor=#999999 cellPadding=3>
+<TBODY>
+<TR>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="http://www.jskx.org.cn/">首页</A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="http://www.jskx.org.cn/col/col1382/index.html">组织人才</A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="http://www.jstt.org.cn:8003/">科技智库</A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="default.php?mod=c&amp;s=ss3276721">学会学术</A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="http://www.jskx.org.cn/col/col16/index.html">科学普及</A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="http://www.jskx.org.cn/col/col17/index.html">对外交流</A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="http://www.jskx.org.cn/col/col1380/index.html">党的建设</A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="http://www.jskx.org.cn/col/col19/index.html">资料中心</A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="http://www.jskx.org.cn/col/col1582/index.html">信息公开</A></TD>
+<TD style="TEXT-ALIGN: center; FONT-FAMILY: 宋体; COLOR: #ffffff; FONT-SIZE: 14px; VERTICAL-ALIGN: middle"><A href="http://oa.jskx.org.cn:81/seeyon/index.jsp"><IMG src="files/105871/1701/y_e2116839.png"></A></TD>
+<TD style="TEXT-ALIGN: center; COLOR: #ffffff; VERTICAL-ALIGN: middle" class=link_37><A href="">江苏学会网</A></TD></TR></TBODY></TABLE></DIV></DIV></DIV><DIV  id="ohid_s49661048" style="HEIGHT: 35px; WIDTH: 1037px; BACKGROUND-IMAGE: url(files/105871/1605/x_aee5239162.jpg); BACKGROUND-REPEAT: no-repeat; POSITION: absolute; BACKGROUND-POSITION: left bottom; LEFT: 66px; FILTER: none; Z-INDEX: 10; TOP: 180px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s49661048_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s49661048_content"  style=""><DIV style="FONT-FAMILY: '微软雅黑'; COLOR: #666666; FONT-SIZE: 16px"><A style="FONT-FAMILY: '微软雅黑'; COLOR: #666666; FONT-SIZE: 16px; MARGIN-RIGHT: 10px; TEXT-DECORATION: none" href="default.php">首页</A>&gt;<A style="MARGIN: 0px 10px; FONT-FAMILY: '微软雅黑'; COLOR: #666666; FONT-SIZE: 16px; TEXT-DECORATION: none">学会学术</A></DIV></DIV></DIV></DIV><DIV  id="ohid_s34092975" style="HEIGHT: 34px; WIDTH: 338px; POSITION: absolute; LEFT: 911px; Z-INDEX: 10; TOP: 47px"><DIV id="s34092975_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s34092975_content"  style=""><form method="get"  action="default.php" onSubmit="return Validator.Validate(this,1)"><TABLE style="WIDTH: 100%; BORDER-COLLAPSE: collapse" border=0 cellSpacing=0 borderColor=#999999 cellPadding=0><TBODY><TR><TD><P align=center><INPUT style="Z-INDEX: 10; POSITION: static; TEXT-ALIGN: left; LINE-HEIGHT: 2.3; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #8cb7d7; TEXT-INDENT: 0px; PADDING-LEFT: 11px; WIDTH: 262px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 31px; VERTICAL-ALIGN: middle; BORDER-LEFT-WIDTH: 0px; TOP: 1px; LEFT: 1px" onfocus="this.value=''" title=输入关键字 value=请输入检索的关键字 size=1 msg="关键字必填" require="true" name="keyword"></P></TD><TD><INPUT style="TEXT-ALIGN: left; VERTICAL-ALIGN: middle" src="files/105871/1701/y_3a816845.png" type=image></TD></TR></TBODY></TABLE><input type=hidden name="mod" value="search"></form><script language="JavaScript" src="mod/shotel/js/WdatePicker.js"></script>
+<script>
+function hezuoshangjia(){
+	var key=document.getElementById('key').value;
+	var url='default.php?mod=c&s=ss60f67af';
+	url = url + '&key=' + key;
+	window.open(url);
+}
+</script>
+
+
+
+</DIV></DIV></DIV><DIV  id="ohid_s85705616" style="HEIGHT: 236px; WIDTH: 345px; POSITION: absolute; LEFT: 65px; Z-INDEX: 10; TOP: 238px; BACKGROUND-COLOR: #ffffff; lock: 0"><DIV id="s85705616_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s85705616_content"  style=""><DIV style="FONT-FAMILY: '微软雅黑'; WIDTH: 345px">
+<DIV style="FONT-SIZE: 18px; HEIGHT: 48px; FONT-FAMILY: '微软雅黑'; WIDTH: 345px; BACKGROUND: #004a87; COLOR: #fff; TEXT-ALIGN: center; LINE-HEIGHT: 48px">组织建设</DIV>
+<UL style="FONT-SIZE: 14px; BACKGROUND: #f4f4f4; PADDING-BOTTOM: 20px; MARGIN: 0px; LIST-STYLE: none none outside">
+<LI class=link_13 style="HEIGHT: 20px; PADDING-TOP: 15px; LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px"><A href="default.php?mod=c&amp;s=ssa848071">概述</A> </LI>
+<LI class=link_13 style="HEIGHT: 20px; PADDING-TOP: 15px; LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px"><A href="default.php?mod=c&amp;s=ss6af8057">综合示范学会</A> </LI>
+<LI class=link_13 style="HEIGHT: 20px; PADDING-TOP: 15px; LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px"><A href="default.php?mod=c&amp;s=ss6b51312">特色学会</A> </LI>
+<LI class=link_13 style="HEIGHT: 20px; PADDING-TOP: 15px; LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px"><A style="TEXT-DECORATION: none" href="default.php?mod=c&amp;s=ssa7deb68">动态信息</A></LI></UL></DIV></DIV></DIV></DIV><DIV  id="ohid_s38803223" style="HEIGHT: 236px; WIDTH: 345px; POSITION: absolute; LEFT: 423px; Z-INDEX: 10; TOP: 238px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s38803223_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s38803223_content"  style=""><DIV style="WIDTH: 345px; FONT-FAMILY: '微软雅黑'">
+<DIV style="TEXT-ALIGN: center; LINE-HEIGHT: 48px; FONT-FAMILY: '微软雅黑'; BACKGROUND: #004a87; HEIGHT: 48px; COLOR: #fff; FONT-SIZE: 18px">学术交流</DIV>
+<UL style="LIST-STYLE: none none outside; PADDING-BOTTOM: 20px; MARGIN: 0px; BACKGROUND: #f4f4f4; FONT-SIZE: 14px">
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ssd22181c">工作概述</A> </LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ssacf9ed6">动态信息</A></LI></UL></DIV></DIV></DIV></DIV><DIV  id="ohid_s61862821" style="HEIGHT: 236px; WIDTH: 345px; POSITION: absolute; LEFT: 781px; Z-INDEX: 10; TOP: 238px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s61862821_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s61862821_content"  style=""><DIV style="WIDTH: 345px; FONT-FAMILY: '微软雅黑'">
+<DIV style="TEXT-ALIGN: center; LINE-HEIGHT: 48px; FONT-FAMILY: '微软雅黑'; BACKGROUND: #004a87; HEIGHT: 48px; COLOR: #fff; FONT-SIZE: 18px">科技服务</DIV>
+<UL style="LIST-STYLE: none none outside; PADDING-BOTTOM: 20px; MARGIN: 0px; BACKGROUND: #f4f4f4; FONT-SIZE: 14px">
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ss84ae787">工作概述</A> </LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ss6d698ab">动态信息</A></LI></UL></DIV></DIV></DIV></DIV><DIV  id="ohid_s41051542" style="HEIGHT: 236px; WIDTH: 345px; POSITION: absolute; LEFT: 65px; Z-INDEX: 10; TOP: 497px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s41051542_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s41051542_content"  style=""><DIV style="WIDTH: 345px; FONT-FAMILY: '微软雅黑'">
+<DIV style="TEXT-ALIGN: center; LINE-HEIGHT: 48px; FONT-FAMILY: '微软雅黑'; BACKGROUND: #004a87; HEIGHT: 48px; COLOR: #fff; FONT-SIZE: 18px">提升计划</DIV>
+<UL style="LIST-STYLE: none none outside; PADDING-BOTTOM: 20px; MARGIN: 0px; BACKGROUND: #f4f4f4; FONT-SIZE: 14px">
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ssec3d167">工作概述</A> </LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ssac4fbcd">项目清单</A> </LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ss87c514b">动态信息</A></LI></UL></DIV></DIV></DIV></DIV><DIV  id="ohid_s29991493" style="HEIGHT: 236px; WIDTH: 345px; POSITION: absolute; LEFT: 424px; Z-INDEX: 10; TOP: 497px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s29991493_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s29991493_content"  style=""><DIV style="WIDTH: 345px; FONT-FAMILY: '微软雅黑'">
+<DIV style="TEXT-ALIGN: center; LINE-HEIGHT: 48px; FONT-FAMILY: '微软雅黑'; BACKGROUND: #004a87; HEIGHT: 48px; COLOR: #fff; FONT-SIZE: 18px">承接职能</DIV>
+<UL style="LIST-STYLE: none none outside; PADDING-BOTTOM: 20px; MARGIN: 0px; BACKGROUND: #f4f4f4; FONT-SIZE: 14px">
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ssf22a1fc">工作概述</A> </LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ss5a6a1f2">2017年省科协所属学会提供公共服务项目表</A> </LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ss8607f2e">省科协所属学会有序承接政府转移职能试点项目</A> </LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ssdae4678">动态信息</A></LI></UL></DIV></DIV></DIV></DIV><DIV  id="ohid_s29581849" style="HEIGHT: 236px; WIDTH: 345px; POSITION: absolute; LEFT: 781px; Z-INDEX: 10; TOP: 497px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s29581849_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s29581849_content"  style=""><DIV style="WIDTH: 345px; FONT-FAMILY: '微软雅黑'">
+<DIV style="TEXT-ALIGN: center; LINE-HEIGHT: 48px; FONT-FAMILY: '微软雅黑'; BACKGROUND: #004a87; HEIGHT: 48px; COLOR: #fff; FONT-SIZE: 18px">企业工作</DIV>
+<UL style="LIST-STYLE: none none outside; PADDING-BOTTOM: 20px; MARGIN: 0px; BACKGROUND: #f4f4f4; FONT-SIZE: 14px">
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=ss23764c2">概述</A> </LI></UL></DIV></DIV></DIV></DIV><DIV  id="ohid_s6600350" style="HEIGHT: 236px; WIDTH: 345px; POSITION: absolute; LEFT: 65px; Z-INDEX: 10; TOP: 761px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s6600350_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s6600350_content"  style=""><DIV style="WIDTH: 345px; FONT-FAMILY: '微软雅黑'">
+<DIV style="TEXT-ALIGN: center; LINE-HEIGHT: 48px; FONT-FAMILY: '微软雅黑'; BACKGROUND: #004a87; HEIGHT: 48px; COLOR: #fff; FONT-SIZE: 18px">高校科协</DIV>
+<UL style="LIST-STYLE: none none outside; PADDING-BOTTOM: 20px; MARGIN: 0px; BACKGROUND: #f4f4f4; FONT-SIZE: 14px">
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 10px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13><A href="default.php?mod=c&amp;s=sse244089" target=_blank>概述</A> </LI></UL></DIV></DIV></DIV></DIV><DIV  id="ohid_s66251653" style="HEIGHT: 236px; WIDTH: 345px; POSITION: absolute; LEFT: 424px; Z-INDEX: 10; TOP: 761px; BACKGROUND-COLOR: #ffffff; lock: 1"><DIV id="s66251653_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s66251653_content"  style=""><DIV style="WIDTH: 345px; FONT-FAMILY: '微软雅黑'">
+<DIV style="TEXT-ALIGN: center; LINE-HEIGHT: 48px; FONT-FAMILY: '微软雅黑'; BACKGROUND: #004a87; HEIGHT: 48px; COLOR: #fff; FONT-SIZE: 18px">政策法规</DIV>
+<UL style="LIST-STYLE: none none outside; PADDING-BOTTOM: 20px; MARGIN: 0px; BACKGROUND: #f4f4f4; FONT-SIZE: 14px">
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 15px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13></LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 15px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13></LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 15px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13></LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 15px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13></LI>
+<LI style="LIST-STYLE: none none outside; LINE-HEIGHT: 20px; TEXT-INDENT: 15px; HEIGHT: 20px; PADDING-TOP: 15px" class=link_13></LI></UL></DIV></DIV></DIV></DIV><DIV  id="ohid_s2333940" style="HEIGHT: 179px; WIDTH: 330px; POSITION: absolute; LEFT: 432px; Z-INDEX: 15; TOP: 816px; lock: 1"><DIV id="s2333940_c" style="OVERFLOW: hidden; HEIGHT: 100%; WIDTH: 100%; POSITION: absolute; LEFT: 0px; Z-INDEX: 5; TOP: 0px"><DIV id="s2333940_content"  style=""><table  width="100%"  style=" table-layout:fixed;"  border=0 cellspacing="0" ><tbody><tr><td   height=26   style="border-bottom:1px #CCCCCC dashed; vertical-align:middle"   ><span style="float:left;"><img src="http://www.jsxhw.org/images/prefix/set_024.gif"  align="absmiddle">&nbsp;&nbsp;<span  class="link_2"><a href="default.php?mod=article&do=detail&tid=1134397"  target='_blank' title="关于印发《江苏省科学技术协会省级学会组织通则（试行）》的通知">关于印发《江苏省科学 ..</a></span></span><span  style="float:right"> &nbsp;[10-31]</span></td></tr><tr><td   height=26   style="border-bottom:1px #CCCCCC dashed; vertical-align:middle"   ><span style="float:left;"><img src="http://www.jsxhw.org/images/prefix/set_024.gif"  align="absmiddle">&nbsp;&nbsp;<span  class="link_2"><a href="default.php?mod=article&do=detail&tid=1134289"  target='_blank' title="关于印发《江苏省科学技术协会省级学会组织通则（试行）》的通知">关于印发《江苏省科学 ..</a></span></span><span  style="float:right"> &nbsp;[07-20]</span></td></tr><tr><td   height=26   style="border-bottom:1px #CCCCCC dashed; vertical-align:middle"   ><span style="float:left;"><img src="http://www.jsxhw.org/images/prefix/set_024.gif"  align="absmiddle">&nbsp;&nbsp;<span  class="link_2"><a href="default.php?mod=article&do=detail&tid=1132867"  target='_blank' title="省政府办公厅关于进一步加强省科协及所属科技社团科技服务职能的意见">省政府办公厅关于进一 ..</a></span></span><span  style="float:right"> &nbsp;[08-03]</span></td></tr><tr><td   height=26   style="border-bottom:1px #CCCCCC dashed; vertical-align:middle"   ><span style="float:left;"><img src="http://www.jsxhw.org/images/prefix/set_024.gif"  align="absmiddle">&nbsp;&nbsp;<span  class="link_2"><a href="default.php?mod=article&do=detail&tid=1132862"  target='_blank' title="劳动和社会保障部民政部关于社会组织专职工作人员参加养老保险有关问题的通知">劳动和社会保障部民政 ..</a></span></span><span  style="float:right"> &nbsp;[07-25]</span></td></tr><tr><td   height=26   style="border-bottom:1px #CCCCCC dashed; vertical-align:middle"   ><span style="float:left;"><img src="http://www.jsxhw.org/images/prefix/set_024.gif"  align="absmiddle">&nbsp;&nbsp;<span  class="link_2"><a href="default.php?mod=article&do=detail&tid=1132842"  target='_blank' title="关于实施2016年度江苏省科协“提升学会服务科技创新能力计划”的通知">关于实施2016年度 ..</a></span></span><span  style="float:right"> &nbsp;[07-06]</span></td></tr><tr><tr><td  height=26  ><span   style="float:right"  class="link_9"><a href='http://www.jsxhw.org/default.php?mod=c&s=ss1c65e44'  target='_blank'>更多..</a></span></td></tr></table></DIV></DIV></DIV>
+<script>
+mod_disappear();
+setInitAllLow();
+mod_reheight();
+
+content_down(0);
+getcontop();
+adjust_center_bd();
+</script>
+
+<img id="guajian1" src="http://www.jsxhw.org/images/guajian/14.gif"><img id="guajian2" src="http://www.jsxhw.org/images/guajian/2.gif"><img id="guajian3" src="http://www.jsxhw.org/images/guajian/1.gif"><img id="guajian4" src="http://www.jsxhw.org/images/guajian/15.gif"><img id="guajian5" src="http://www.jsxhw.org/images/guajian/15.gif"><img id="guajian6" src="http://www.jsxhw.org/images/guajian/22.gif"><img id="guajian7" src="http://www.jsxhw.org/images/guajian/20.gif"><img id="guajian8" src="http://www.jsxhw.org/images/guajian/27.gif">
+
+<div align="left" id="menu"><a></a><a href="default.php">首页</a><a>&gt;</a><a>学会学术</a></div><div id="f_con1"><IMG src="files/105871/1701/x_86416864.png"></div><div id="f_con3"><SPAN style="Z-INDEX: 10; POSITION: absolute; WIDTH: 296px; HEIGHT: 21px; COLOR: #ffffff; VERTICAL-ALIGN: middle; TOP: 2px; WORD-SPACING: 2px; LEFT: 1px"><A style="BEHAVIOR: url(#default#homepage)" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.pj.edu.sh.cn/');return(false);" href="javascript:;"><FONT style="FONT-SIZE: 14px" color=#ffffff>&nbsp;设为首页</FONT></A><FONT style="FONT-SIZE: 14px" color=#ffffff>&nbsp;|&nbsp;</FONT><A href="javascript:window.external.AddFavorite('http://www.pj.edu.sh.cn/','上海戏剧学院附属中学')"><FONT style="FONT-SIZE: 14px" color=#ffffff>加入收藏</FONT></A><FONT style="FONT-SIZE: 14px" color=#ffffff>&nbsp;|&nbsp;</FONT><A href="http://www.pj.edu.sh.cn/default.php?mod=c&amp;s=ss7e820b8"><FONT style="FONT-SIZE: 14px" color=#ffffff>联系我们</FONT></A></SPAN> 
+<P></P></div>
+</div>
+<div id="background_1" style="z-index:-100;">&nbsp;</div>
+<div id="background_2" style="z-index:-100;">&nbsp;</div>
+<iframe src="" name="hideiframe" width="0" marginwidth="0" height="0" marginheight="0" scrolling="no" frameborder="0" id="hideiframe"></iframe>
+<img src="../../images/common/gl.gif" alt="进入编辑状态" style="position:absolute; right:0px; top:0px; cursor:pointer; display:none"  onClick="adminlogin();">
+<div id="floatd" style="position:absolute; z-index:1000; display:none"></div>
+<div id="popgg" style="position:absolute; display:none"></div>
+
+<span style="position:absolute; display:none; "><script src='http://count.17oh.com/count2.php?id=7512&page=http%3A%2F%2Fwww.jsxhw.org%2Fdefault.php%3Fmod%3Dc%26s%3Dss3276721'></script></span>
+<script type="text/javascript" src="http://www.jsxhw.org/include/js/ugvquest.js"></script>
+
+
+
+
+
+<script>
+automuti();
+
+
+
+reloadok();
+
+
+
+</script> <script type="text/javascript">
+
+//function oho_attachEvent(obj, evt, func, eventobj) {
+	//eventobj = !eventobj ? obj : eventobj;
+	////alert('obj='+obj+',eventobj='+eventobj);
+	//if(obj && obj.addEventListener) {
+
+		//obj.addEventListener(evt, func, false);
+	//} else if(eventobj && eventobj.attachEvent) {
+
+		//obj.attachEvent("on" + evt, func);
+	//}
+//}
+
+function getDocHeight() {
+    var D = document;
+    return Math.max(
+        Math.max(D.body.scrollHeight, D.documentElement.scrollHeight),
+        Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
+        Math.max(D.body.clientHeight, D.documentElement.clientHeight)
+    );
+}
+
+if (!window.ActiveXObject){
+        // oho_attachEvent(window, 'load', function() {
+                document.body.style.height = getDocHeight() + "px"; 
+        // });
+}
+</script>
+
+
+
+	<script src="http://tj.jskx.org.cn/vzstat.js" type="text/javascript"></script><!--学会网图片下面的说明处理-->
+<script src="include/js/jquery-1.9.1.min.js"></script>
+<script>
+	$j = jQuery.noConflict();
+	$j(function(){
+		$j(".picDes").css("textAlign","center").css("color","#07e707");
+		//$j(".mod_font08_t>div").css("textAlign","center").css("color","#07e707");
+		if($j(".mod_font08_t>div").prev().find("img")[0]){
+			$j(".mod_font08_t>div").css("textAlign","center").css("color","#07e707");
+		}
+	});
+</script>
+
+</BODY></html>

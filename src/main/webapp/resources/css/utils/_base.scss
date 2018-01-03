@@ -1,0 +1,41 @@
+// Base layout such as container, row, column
+
+//use row and container can have base gridlayout
+
+.wrapper{
+    background-color: rgb(241, 241, 241);
+    margin: $zero-var;
+    padding: $zero-var;
+}
+
+
+.container-fluid{
+    width: $container-fluid-width;
+    margin: $all-container-margin;
+    padding: $container-fluid-padding;
+}
+
+.container{
+    width: $container-width;
+    margin: auto;
+}
+
+.blue-line{
+    width: 100%;
+    height: $line-height;
+    background-color: #005a85;
+}
+
+//float for controlling items
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+//display property
+.display-none{
+    display: none;
+}

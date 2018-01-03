@@ -1,0 +1,53 @@
+//Ad css
+//
+//## parent element is container
+
+.ad{
+    padding: {
+        left: $ad-padding-left;
+    };
+    margin: {
+        top: $ad-margin-top;
+    };
+
+    position: relative;
+    border: $ad-border;
+    background-color: white;
+    width: $container-width - $ad-padding-left;
+    height: $ad-total-height;
+
+    .ad__img-box {
+        height: $ad-image-size;
+        width: $ad-image-size;
+        position: absolute;
+        top: 50%;
+        margin-top: 0 - floor($ad-image-size / 2);
+
+        //    img{
+        //        display: block;
+        //        height: $ad-image-size;
+        //        width: $ad-image-size;
+        //        line-height: $ad-image-size;
+        //    }
+    }
+
+    .ad__text-box{
+        height: $ad-text-height;
+        width: $ad-text-width;
+        position: absolute;
+        top: 50%;
+        left: $ad-image-size + $ad-distance;
+        margin-top: 0 - floor($ad-text-height / 2);
+        a {
+            text-align: center;
+            font: {
+                family: $font-family-ad;
+                weight: $font-weight-ad;
+                size: $font-size-ad;
+            };
+            color: $ad-text-color;
+        }
+
+    }
+
+}

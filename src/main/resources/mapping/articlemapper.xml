@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jskj.ssm.mapper.ArticleMapper">
+
+
+    <select id="getOneArticle" parameterType="int" resultType="com.jskj.ssm.model.Article">
+        select * from articles where artId=#{artId} ;
+    </select>
+
+    <select id="getAllArticles" resultType="com.jskj.ssm.model.Article">
+        select artId,artTitle,artText,artType,artPicturePath,artURL,artDate,artAuthor,artEditor from articles ;/*ORDER BY $(artId) DESC*/
+    </select>
+
+    <insert id="addArticle" parameterType="com.jskj.ssm.model.Article">
+        insert into articles (artTitle,artText,artType,artPicturePath,artURL,artDate,artAuthor,artEditor) values (#{artTitle},#{artText},#{artType},#{artPicturePath},#{artURL},#{artDate},#{artAuthor},#{artEditor});
+    </insert>
+
+    <select id="getArticlesByArtType" parameterType="String" resultType="com.jskj.ssm.model.Article">
+        select * from articles  where  artType=#{artType} limit 8;
+    </select>
+
+    <select id="getArticlesByArtTypeOnly" parameterType="String" resultType="com.jskj.ssm.model.Article">
+        select * from articles  where  artType=#{artType} limit 1;
+    </select>
+
+
+</mapper>

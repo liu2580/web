@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/project.css">
+    <script src="../resources/js/jquery-3.2.1.min.js"></script>
+    <script src="../resources/js/jquery-ui.min.js"></script>
+    <title>创（领）办企业基本情况</title>
+</head>
+<body>
+<div class="pro-panel">
+    <h1>创（领）办企业基本情况</h1>
+    <div class="pro-conn">
+        <form action="" method="post">
+            <div class="pro-page-table">
+                <table>
+                    <tr>
+                        <td colspan="2"><label for="tb_company_name">企业名称</label> </td>
+                        <td colspan="2"><input type="text" id="tb_company_name" name="tb_company_name"></td>
+                        <td><label for="tb_company_enroll">注册时间</label></td>
+                        <td><input type="text" id="tb_company_enroll" name="tb_company_enroll"></td>
+                        <td><label for="tb_company_money">注册资本</label></td>
+                        <td><input type="text" id="tb_company_money" name="tb_company_money"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="tb_company_workers">企业在职工人数</label></td>
+                        <td colspan="6"><input type="text" id="tb_company_workers" name="tb_company_workers">其中（单位：人）</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">具体人数统计</td>
+                        <td><label for="tb_company_graduated">研究生</label> </td>
+                        <td><input type="text" id="tb_company_graduated" name="tb_company_graduated"></td>
+                        <td><label for="tb_company_regular">本科</label> </td>
+                        <td><input type="text" id="tb_company_regular"></td>
+                        <td><label for="tb_company_phd">副教授</label> </td>
+                        <td><input type="text" id="tb_company_phd" name="tb_company_phd"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">是否为市级以上高新技术企业 </td>
+                        <td colspan="2">
+                            <input type="radio" name="tb_company_if_new" title="yes">是&nbsp;
+                            <input type="radio" name="tb_company_if_new" title="no">否
+                        </td>
+                        <td colspan="2"><label for="tb_company_admit">获认证情况</label> </td>
+                        <td><input type="text" id="tb_company_admit" name="tb_company_admit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="tb_company_field">产业领域</label> </td>
+                        <td colspan="6">软件与服务外包<input type="text" id="tb_company_field" name="tb_company_field"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="4">所处创新创业载体</td>
+                        <td><label for="tb_company_driver_name">载体名称</label> </td>
+                        <td colspan="5">新工业园<input type="text" id="tb_company_driver_name" name="tb_company_driver_name"> </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">载体类型</td>
+                        <td class="td-vertical-border-none" colspan="5">
+                            <input type="checkbox" name="tb_company_driver_type" title="载体类型">高新技术特色产业&nbsp;
+                            <input type="checkbox" name="tb_company_driver_type" title="载体类型">大学科技园&nbsp;
+                            <input type="checkbox" name="tb_company_driver_type" title="载体类型">科技企业孵化器&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-vertical-border-none" colspan="5">
+                            <input type="checkbox" name="tb_company_driver_type" title="载体类型">龙爷科技园区&nbsp;
+                            <input type="checkbox" name="tb_company_driver_type" title="载体类型">科技创业服务中心&nbsp;
+                            <input type="checkbox" name="tb_company_driver_type" title="载体类型">大学生创业园&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_top-border-none" colspan="5">
+                            <input type="checkbox" name="tb_company_driver_type" title="载体类型">中小企业创业基地&nbsp;
+                            <input type="checkbox" name="tb_company_driver_type" title="载体类型">其他&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="6">公司股本结构</td>
+                        <td><label for="tb_company_amount">总股本(万元)</label></td>
+                        <td><input type="text" id="tb_company_amount" name="tb_company_amount"></td>
+                        <td><label for="tb_company_talent_amount">引进人才基金投入(万元)</label> </td>
+                        <td><input type="text" id="tb_company_talent_amount" name="tb_company_talent_amount"></td>
+                        <td><label for="tb_company_know_amount">是指产权作价(万元)</label> </td>
+                        <td><input type="text" id="tb_company_know_amount" name="tb_company_know_amount"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="3">风险投资公司投资</td>
+                        <td colspan="2">风险投资公司名称</td>
+                        <td>投资金额(万元)</td>
+                        <td>持股比例(%)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_invest_company_name" title="风险投资公司名称"></td>
+                        <td><input type="text" name="tb_invest_amount" title="投资金额"></td>
+                        <td><input type="text" name="tb_share_ratio" title="持股比例"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_invest_company_name" title="风险投资公司名称"></td>
+                        <td><input type="text" name="tb_invest_amount" title="投资金额"></td>
+                        <td><input type="text" name="tb_share_ratio" title="持股比例"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="2">其他</td>
+                        <td colspan="2">投资金额(万元)</td>
+                        <td colspan="2">占总公司总股本比例(%)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="tb_other_invest_amount" title="投资金额"></td>
+                        <td colspan="2"><input type="text" name="tb_other_invest_ratio" title="占总公司总股本比例"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="tb_all_privacy">总资产(万元)</label> </td>
+                        <td colspan="2"><input type="text" id="tb_all_privacy" name="tb_all_privacy"></td>
+                        <td><label for="tb_all_loan">贷款总额(万元)</label> </td>
+                        <td><input type="text" id="tb_all_loan" name="tb_all_loan"></td>
+                        <td><label for="tb_credit_level">信用等级</label> </td>
+                        <td><input type="text" id="tb_credit_level"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="4">承担区级以上科技项目或人才计划情况</td>
+                        <td colspan="4">项目名称及编号</td>
+                        <td colspan="2">立项批准部门</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">1、<input type="text" name="tb_project_name_number" title="项目名称及编号"></td>
+                        <td colspan="2"><input type="text" name="tb_allow_unit" title="立项批准部门"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">2、<input type="text" name="tb_project_name_number" title="项目名称及编号"></td>
+                        <td colspan="2"><input type="text" name="tb_allow_unit" title="立项批准部门"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">3、<input type="text"  name="tb_project_name_number" title="项目名称及编号"></td>
+                        <td colspan="2"><input type="text" name="tb_allow_unit" title="立项批准部门"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">科技投入与效益情况</td>
+                        <td colspan="2"><input type="text" name="tb_tec_invest_result" title="科技投入与效益情况"> </td>
+                        <td colspan="2"><input type="text" name="tb_tec_invest_result" title="科技投入与效益情况"></td>
+                        <td colspan="1"><input type="text" name="tb_tec_invest_result" title="科技投入与效益情况"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">研发投入</td>
+                        <td colspan="2"><input type="text" name="tb_study_invest" title="研发投入"> </td>
+                        <td colspan="2"><input type="text" name="tb_study_invest" title="研发投入"></td>
+                        <td colspan="1"><input type="text" name="tb_study_invest" title="研发投入"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">高科技新产品销售收入</td>
+                        <td colspan="2"><input type="text" name="tb_product_income" title="新产品收入"> </td>
+                        <td colspan="2"><input type="text" name="tb_product_income" title="新产品收入"></td>
+                        <td colspan="1"><input type="text" name="tb_product_income" title="新产品收入"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">实现利税</td>
+                        <td colspan="2"><input type="text" name="tb_create_benefit" title="实现利税"> </td>
+                        <td colspan="2"><input type="text" name="tb_create_benefit" title="实现利税"> </td>
+                        <td colspan="1"><input type="text" name="tb_create_benefit" title="实现利税"> </td>
+                    </tr>
+                </table>
+                <button id="pre_1" type="submit" class="button bt-orange table_button">上一步</button>
+                <button id="next_1" type="button" class="button bt-orange table_button">下一步</button>
+
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.panel{
+    width: $panel-width;
+    height: $panel-height;
+    color: $news-text-color;
+    border: $panel-border;
+
+    .panel__title{
+        height: $panel-title-height;
+        line-height: $panel-title-height;
+        text-align: center;
+        font: {
+            family: $font-family-title;
+            size: $font-family-title;
+            weight: bold;
+        };
+        border: $panel-title-border;
+    }
+
+    .panel__content{
+        height: $panel-content-height;
+        box-sizing: border-box;
+        padding: {
+            top: $panel-content-padding-v;
+            bottom: $panel-content-padding-v;
+            left: $panel-content-padding-h;
+            right: $panel-content-padding-h;
+        };
+
+        .panel-left{
+            width: $panel-left-width;
+            float: left;
+        }
+
+        .panel-right{
+            float: right;
+            width:  $panel-width - $panel-left-width - 2 * $panel-content-padding-h;
+            text-align: left;
+            line-height: $panel-text-height;
+            overflow: hidden;
+            font: {
+                family: $font-family-global;
+                size: $font-size-subtitle;
+            };
+        }
+    }
+}

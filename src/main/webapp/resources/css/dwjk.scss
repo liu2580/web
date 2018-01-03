@@ -1,0 +1,136 @@
+//utils
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/normalize";
+@import "./utils/mixin";
+
+//Component
+@import "./components/header";
+@import "./components/menu";
+@import "./components/footer";
+
+//variables
+$row-h-220: 220px;
+$row-h-153: 153px;
+
+$jl-left-box-width: 580px;
+$jl-right-box-width: 650px;
+
+//row
+.row-220{
+    width: $container-width - 20px;
+    height: $row-h-220;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+
+    font-family: $font-family-global;
+
+    padding: {
+        left: 10px;
+        right: 10px;
+    };
+}
+
+.row-153{
+    width: $container-width - 20px;
+    height: $row-h-153;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+
+    font-family: $font-family-global;
+
+    padding: {
+        left: 10px;
+        right: 10px;
+    };
+}
+
+.jl-box-left{
+    float: left;
+    @include box-b(inherit, $jl-left-box-width);
+
+    >.jl-box-title{
+        @include title(28px, $jl-left-box-width);
+
+        >.jl-tle-left{
+            @include title-left-b(28px, 110px);
+        }
+        >.jl-tle-right{
+            @include title-right(28px, 70px);
+        }
+    }
+
+    .jl-ctn{
+        height: 220px - 28px;
+        width: $jl-left-box-width;
+        box-sizing: border-box;
+        padding-left: 4px;
+
+        >.jl-list-left{
+            @include list-left(220px - 28px, 390px, disc)
+        }
+        >.jl-list-right{
+            @include list-right(220px - 28px, 90px)
+        }
+    }
+}
+
+.jl-box-right{
+    float: right;
+    @include box-b(inherit, $jl-right-box-width);
+
+    >.jl-box-title{
+        @include title(28px, $jl-right-box-width);
+
+        >.jl-tle-left{
+            @include title-left(28px, 150px);
+        }
+
+        >.jl-tle-right{
+            @include title-right(28px, 70px);
+        }
+    }
+
+    .jl-ctn{
+        height: 220px - 28px;
+        width: $jl-right-box-width;
+        box-sizing: border-box;
+        padding-top: 5px;
+
+        >.jl-list-left{
+            padding-left: 5px;
+            @include list-left(220px - 28px, 400px, disc)
+        }
+        >.jl-list-right{
+            @include list-right(220px - 28px, 90px)
+        }
+        >.jl-img{
+            box-sizing: border-box;
+            padding: {
+                top: 13px;
+                left: 5px;
+            };
+            float: left;
+            width: 110px;
+            height: inherit;
+        }
+    }
+}
+
+.jl-img-left{
+    float: left;
+    overflow: hidden;
+    height: 153px;
+    width: 750px;
+}
+
+.jl-img-right{
+    float: right;
+    width: 225px;
+    height: 72px;
+}
+
+
+

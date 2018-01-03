@@ -1,0 +1,96 @@
+//utils
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/normalize";
+@import "./utils/mixin";
+
+//Component
+@import "./components/header";
+@import "./components/menu";
+@import "./components/footer";
+
+
+//variables
+$kj-w-1: 623px;
+$kj-h-m: 220px;
+$kj-h-s: 60px;
+$kj-t-h: 41px;
+
+// grid layout
+.kj-row-m{
+    height: $kj-h-m;
+    width: $container-width;
+    margin-top: 10px;
+    font-family: $font-family-title;
+
+    >.kj-box-left{
+        @include mix-kj-box-f(left);
+    }
+
+    >.kj-box-right{
+        @include mix-kj-box-f(right);
+    }
+
+    >.kj-box{
+        @include mix-kj-box-f();
+    }
+}
+
+.kj-row-s{
+    height: $kj-h-s;
+    width: $container-width;
+    margin-top: 10px;
+    padding-top: 10px;
+
+    img{
+        margin: {
+            left: 30px;
+            right: 30px;
+        };
+
+    }
+}
+
+//title
+.kj-t-s{
+    @include mix-kj-t(1);
+}
+
+.kj-t-m{
+    @include mix-kj-t(2);
+}
+
+.kj-ctn-left{
+    @include mix-kj-ctn(left);
+}
+
+.kj-ctn-right{
+    @include mix-kj-ctn(right);
+}
+
+.kj-title-sub{
+    height: 27px;
+    line-height: 27px;
+    position: absolute;
+    bottom: -1px;
+    left: 125px;
+
+    >.kj-sub-item-show-s{
+        @include mix-kj-sub-item-show;
+        width: 85px;
+    }
+
+    >.kj-sub-item-hidden-s{
+        width: 85px;
+        @include mix-kj-sub-item-hide;
+    }
+
+    >.kj-sub-item-hidden-m{
+        @include mix-kj-sub-item-hide;
+        width: 110px;
+    }
+    >.kj-sub-item-show-m{
+        width: 110px;
+        @include mix-kj-sub-item-show;
+    }
+}

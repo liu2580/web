@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{font-size:12px; font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif; }
+input,button,textarea,select,optgroup,option{font-size:12px;font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;}
+body, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, h1{padding:0;margin:0;}
+img{border:none;}
+ul, ol { list-style:none; }
+li{list-style-type:none;}
+a{text-decoration:none; color:#595757; cursor: pointer;}
+a:hover{text-decoration:none; color:#007ce4; cursor: pointer;}
+#foucsBox { margin: 0 auto; padding: 0; width: 380px; height: 284px; overflow: hidden; zoom: 1; position: relative; }
+#foucsBox .imgCon { width: 380px; height: 284px; margin: 0; padding: 0; position: relative; list-style: none; }
+#foucsBox .imgCon li { float: left; width: 380px; height: 284px; }
+#foucsBox .imgCon li img { border: 0; }
+#foucsBox .imgCon li .imgTitle { width: 380px; position: absolute; bottom: 28px; text-align: center; z-index: 2; }
+#foucsBox .imgCon li .imgTitle a { color: #fff; display: block; text-decoration: none; font-family: "Microsoft Yahei","黑体"; font-weight: normal; font-size: 18px; zoom: 1; }
+#foucsBox .showPage { width: 380px; height: 60px; position: absolute; bottom: 0; background: #000; opacity: 0.7; filter: alpha(opacity=70); z-index: 1; }
+#foucsBox .foucs { width: 380px; height: 22px; position: absolute; bottom: 0px; text-align: center; z-index: 3; }
+#foucsBox .foucs span { display: inline-block; width: 9px; height: 9px; margin: 0 5px; line-height: 0; font-size: 0; background: url(dot_03.png); cursor: pointer; overflow: hidden; }
+#foucsBox .foucs span.f { background: url(dot_05.png) no-repeat; cursor: pointer;}
+
+
+、

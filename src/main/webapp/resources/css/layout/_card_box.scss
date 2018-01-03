@@ -1,0 +1,18 @@
+//box for contain cards
+.card-row{
+    background-color: white;
+    margin: auto;
+    width: 3 * $card-width + 15 * $card-col-padding-horizontal;
+
+    .card-col{
+        display: inline-block;
+        width: $card-width;
+        height: $card-height;
+        padding: {
+            top: $card-col-padding-vertical;
+            bottom: $card-col-padding-vertical;
+            left: $card-col-padding-horizontal;
+            right: $card-col-padding-horizontal;
+        };
+    }
+}

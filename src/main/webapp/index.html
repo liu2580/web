@@ -1,0 +1,1195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script language="javascript" src="module/jslib/jquery/jquery.js"></script>
+    <link href="script/page.css" type=text/css rel=stylesheet>
+    <title>江苏省科技发展研究中心</title>
+    <meta name="Keywords" content="内容管理、内容管理发布（CMS）系统、信息发布、新闻采编发系统、知识管理、知识门户、政府门户、教育门户、企业门户、竞争情报系统、抓取系统、信息采集、信息雷达系统、电子政务、电子政务解决方案、办公系统、OA、网站办公系统">
+    <meta name='Generator' content='大汉版通'>
+    <meta name='Author' content='大汉网络'>
+    <meta name='Maketime' content='2017-12-12 09:29:48'>
+    <meta name="sitename" content="江苏省科技发展研究中心">
+    <meta name="siteurl" content="http://www.jskx.org.cn/index.html">
+    <meta name="guild" content="">
+    <meta name="district" content="">
+    <meta name="sitecatalog" content="">
+    <link href="images/281/css2017.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+function swap_bp(n) {
+    for (var i = 1; i <= 2; i++) {
+        var curC = document.getElementById("bpview" + i);
+        var curD = document.getElementById("bpview1" + i);
+        var curB = document.getElementById("bp" + i);
+        if (n == i) {
+            curC.style.display = "block";
+            curD.style.display = "block";
+            curB.className = "bp1";
+        } else {
+            curC.style.display = "none";
+            curD.style.display = "none";
+            curB.className = "bp2";
+        }
+    }
+}
+
+$(function() {
+
+    $.getJSON("http://www.jsxhw.org/tuisongsjxhApi.php?callback=?",
+        function(result) {
+            if (result.errorCode == 0) {
+
+                // 执行代码
+                var list = result.data;
+                $("#changeList1").empty();
+                var html1 = "";
+                if (list.length > 0) {
+                    for (var i = 0; i < list.length; i++) {
+                        html1 += '<table cellpadding="0" cellspacing="0" border="0" width="100%" class="ywkd_more" height="30"><tr>';
+                        html1 += '<td width="15" align="center"><img src="images/281/1703140901165468655.png" width="5" height="8" /></td>';
+                        html1 += '<td width="375"> <a href="' + list[i].url + '" title="' + list[i].title + '" target=_blank>';
+                        html1 += tdAndSub(list[i].title, 24) + '</a></td><td width="56" align="right" >' + getDateStr(list[i].releasetime) + '</td></tr></table>';
+                    }
+                }
+                $("#changeList1").html(html1);
+            } else {
+                alert("接口调用省级学会数据错误！");
+            }
+        });
+});
+
+function tdAndSub(str, showNum) {
+    if (str != null && str != undefined && str != '') {
+        if (str.length > showNum) {
+            str = str.substring(0, showNum) + "...";
+        }
+    }
+    return str;
+}
+
+function getDateStr(d) {
+    var date = new Date(Date.parse(d.replace(/-/g, "/")));
+    var datetime = ((date.getMonth() + 1) >= 10 ? (date.getMonth() + 1) : "0" + (date.getMonth() + 1)) + "-" + (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
+    return datetime;
+}
+</script>
+
+<body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="124">
+        <tr>
+            <td align="center" style="background-image:url(images/281/skx_01.jpg); background-repeat:repeat; background-position:center">
+                <script type="text/javascript">
+                // 设置为主页 
+                function SetHome(obj, vrl) {
+                    try {
+                        obj.style.behavior = 'url(#default#homepage)';
+                        obj.setHomePage(vrl);
+                    } catch (e) {
+                        if (window.netscape) {
+                            try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                            } catch (e) {
+                                alert("此操作被浏览器拒绝！
+                                    请在浏览器地址栏输入 "about:config"
+                                    并回车 然后将[signed.applets.codebase_principal_support] 的值设置为 'true', 双击即可。 "); 
+                                }
+                                var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                                prefs.setCharPref('browser.startup.homepage', vrl);
+                            } else {
+                                alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入：" + vrl + "点击确定。");
+                            }
+                        }
+                    }
+                    // 加入收藏 兼容360和IE6 
+                    function shoucang(sTitle, sURL) {
+                        try {
+                            window.external.addFavorite(sURL, sTitle);
+                        } catch (e) {
+                            try {
+                                window.sidebar.addPanel(sTitle, sURL, "");
+                            } catch (e) {
+                                alert("加入收藏失败，请使用Ctrl+D进行添加");
+                            }
+                        }
+                    }
+                </script>
+                <table border="0" cellspacing="0" cellpadding="0" width="1270" align="center" height="124">
+                    <tbody>
+                        <tr>
+                            <td width="485" align="left">
+                                <img src="picture/0/1604261825543086189.png" width="454" height="122" />
+                            </td>
+                            <td valign="top" align="right">
+                                <div style="padding-top: 10px;"></div>
+                                <div style="color: rgb(255, 255, 255); font-size: 14px;">
+                                    <a style="color: rgb(255, 255, 255);" onclick="SetHome(this,window.location)" href="javascript:void(0)">设为首页</a> | <a style="color: rgb(255, 255, 255);" onclick="shoucang(document.title,window.location)" href="javascript:void(0)">加入收藏</a> | <a style="color: rgb(255, 255, 255);" href="index.html" target="_blank">联系我们</a> | <a style="color: rgb(255, 255, 255);" href="managerlog/log.html" target="_blank">管理员入口</a>
+                                </div>
+                                <form name="qForm" onsubmit="return check()" action="/jsearch/search.do#" method="get" target="_blank" 360chrome_form_autofill="2">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="300">
+                                        <tbody>
+                                            <tr>
+                                                <td height="71" width="236">
+                                                    <input id="pos" name="pos" value="title,content" type="hidden" />
+                                                    <input onblur="if(this.value==&quot;&quot;){this.value=&quot;请输入检索的关键字&quot;}" style="border: currentColor; width: 265px; height: 33px; line-height: 33px; padding-left: 8px; background-color: rgb(140, 183, 215);" id="hotwords" class="serach-input" onclick="if(this.value==&quot;请输入检索的关键字&quot;){this.value=&quot;&quot;;this.focus();}" name="q" value="请输入检索的关键字" />
+                                                    <input name="pagemode" value="result" type="hidden" />
+                                                    <input name="appid" value="1" type="hidden" />
+                                                    <input name="style" value="1" type="hidden" />
+                                                    <input name="ck" value="o" type="hidden" />
+                                                </td>
+                                                <td width="64">
+                                                    <input name="imageField" src="picture/0/1604261835173931296.png" width="64" height="33" type="image" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="43">
+        <tr>
+            <td align="center" background="images/281/skx_03.jpg">
+                <style>
+                .gzkjwdh td a {
+                    color: #FFF
+                }
+
+                .gzkjwdh td a:hover {
+                    text-decoration: none;
+                    color: #F00;
+                    font-weight: bold
+                }
+
+                .gzkjwdh a {
+                    padding: 0px
+                }
+                </style>
+                <table width="1270" height="43" align="center" class="gzkjwdh" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr class="firstRow">
+                            <td align="center">
+                                <a style="font-size: 18px;" href="col/col1382/index.html">科技人才</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                            <td align="center">
+                                <a style="font-size: 18px;" href="http://www.jstt.org.cn:8003/" target="_blank">科技智库</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                            <td align="center">
+                                <a style="font-size: 18px;" href="col/col21/index.html">学会学术</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                            <td align="center">
+                                <a style="font-size: 18px;" href="col/col16/index.html">科学普及</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                            <td align="center">
+                                <a style="font-size: 18px;" href="col/col17/index.html" target="_blank">对外交流</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                            <td align="center">
+                                <a style="font-size: 18px;" href="col/col1380/index.html">党的建设</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                            <td align="center">
+                                <a style="font-size: 18px;" href="col/col19/index.html">资料中心</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                            <td align="center">
+                                <a style="font-size: 18px;" href="col/col1582/index.html">信息公开</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                            <td align="center">
+                                <a style="font-size: 18px;" href="http://oa.jskx.org.cn:81/seeyon/index.jsp" target="_blank"><img width="105" height="43" src="picture/0/1604281714509846383.png" border="0"/></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div style="padding-top:10px;"></div>
+    <table width="1270" border="0" align="center" cellpadding="0" cellspacing="0" style="border:solid 1px #CCCCCC; background-color:#FFF" height="80">
+        <tr>
+            <td width="10"> </td>
+            <td width="67"><img src="images/281/kx2017_03.png" width="67" height="67" /></td>
+            <td width="30"> </td>
+            <td width="1131" align="left">
+                <table width='100%' cellspacing='0' cellpadding='0' border='0'>
+                    <tr>
+                        <td style=''>
+                            <table border="0" align="left" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding-left:10px;"><a style=" font-size:38px; font-weight:bold; color:#0b6ab2; font-family:微软雅黑" href='art/2017/12/8/art_78_782774.html' title='怀进鹏出席2017世界智能制造大会' target=_blank>怀进鹏出席2017世界智能制造大会</a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="30"> </td>
+        </tr>
+        <!--
+  <tr>
+    <td><a href="http://www.cast.org.cn/tjpt/cxzc/index.html" target="_blank"><img src="images/281/cxzc_01.gif" width="1270" height="78" /></a></td>
+  </tr>-->
+    </table>
+    <div style="padding-top:10px;"></div>
+    <table width="1270" border="0" align="center" cellpadding="0" cellspacing="0" height="284">
+        <tr>
+            <td width="446" align="center">
+                <p>
+                    <iframe width="446" height="284" scrolling="no" frameborder="0" src="col/col1662/index.html"></iframe>
+                    
+                </p>
+            </td>
+            <td width="16"> </td>
+            <td width="446" align="left" valign="top">
+                <table width="446" border="0" cellspacing="0" cellpadding="0" style="border-bottom:solid 1px #0f73bf">
+                    <tr>
+                        <td width="132" height="38" align="center" background="images/281/kx2017_20.png" style="color:#FFF; font-size:18px; font-weight:bold">要闻快递</td>
+                        <td width="314" align="right">
+                            <style>
+                            .ywkd_more a {
+                                color: #075793;
+                                font-size: 14px
+                            }
+
+                            .ywkd_more a:hover {
+                                color: #f00;
+                            }
+                            </style>
+                            <div class="ywkd_more"><a href="col/col79/index.html">更多>></a></div>
+                        </td>
+                    </tr>
+                </table>
+                <style>
+                .ywkd_more,
+                .ywkd_more a {
+                    color: #075793;
+                    font-size: 14px;
+                    line-height: 30px
+                }
+
+                .ywkd_more a:hover {
+                    color: #f00;
+                }
+                </style>
+                <div style="height:8px ;width:100%"></div>
+                <table width='100%' cellspacing='0' cellpadding='0' border='0'>
+                    <tr>
+                        <td style=''>
+                            <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                <tr>
+                                    <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                    <td><a href='art/2017/12/11/art_79_782878.html' class='bt_link' title='盐城市举办2017年青少年科技模型竞赛活动' target=_blank>盐城市举办2017年青少年科技模型竞赛活动</a></td>
+                                    <td width='80' align='right'>12-11</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=''>
+                            <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                <tr>
+                                    <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                    <td><a href='art/2017/12/8/art_79_782851.html' class='bt_link' title='江苏人和环保设备有限公司科协成立' target=_blank>江苏人和环保设备有限公司科协成立</a></td>
+                                    <td width='80' align='right'>12-08</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=''>
+                            <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                <tr>
+                                    <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                    <td><a href='art/2017/12/11/art_79_782848.html' class='bt_link' title='扬州市智慧数学研究会成立' target=_blank>扬州市智慧数学研究会成立</a></td>
+                                    <td width='80' align='right'>12-11</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=''>
+                            <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                <tr>
+                                    <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                    <td><a href='art/2017/12/11/art_79_782844.html' class='bt_link' title='2017年省全民科学素质工作领导小组成员单位联络员会议在宁召开' target=_blank>2017年省全民科学素质工作领导小组成员单位联...</a></td>
+                                    <td width='80' align='right'>12-11</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=''>
+                            <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                <tr>
+                                    <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                    <td><a href='art/2017/12/11/art_79_782837.html' class='bt_link' title='省科协宣传工作座谈会在宁召开' target=_blank>省科协宣传工作座谈会在宁召开</a></td>
+                                    <td width='80' align='right'>12-11</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=''>
+                            <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                <tr>
+                                    <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                    <td><a href='art/2017/12/11/art_79_782786.html' class='bt_link' title='南通市委常委会议审议并原则通过《南通市科协系统深化改革实施方案》' target=_blank>南通市委常委会议审议并原则通过《南通市科协系统...</a></td>
+                                    <td width='80' align='right'>12-11</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=''>
+                            <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                <tr>
+                                    <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                    <td><a href='art/2017/12/8/art_79_782783.html' class='bt_link' title='江苏科技大学苏州理工学院成立科协' target=_blank>江苏科技大学苏州理工学院成立科协</a></td>
+                                    <td width='80' align='right'>12-08</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=''>
+                            <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                <tr>
+                                    <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                    <td><a href='art/2017/12/8/art_79_782758.html' class='bt_link' title='苏州离岸创新创业联盟成功揭牌' target=_blank>苏州离岸创新创业联盟成功揭牌</a></td>
+                                    <td width='80' align='right'>12-08</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="16"> </td>
+            <td width="346" align="left" valign="top">
+                <table width="346" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="24" height="38"><img src="images/281/kx2017_07.png" width="64" height="7" /></td>
+                        <td width="198" align="center" style="font-size:18px; color:#165f97; font-weight:bold">走进科技发展研究中心</td>
+                        <td width="24"><img src="images/281/kx2017_09.png" width="64" height="7" /></td>
+                    </tr>
+                </table>
+                <table width="346" border="0" cellspacing="0" cellpadding="0" background="images/281/kx2017_13.png">
+                    <tr>
+                        <td height="147" align="center">
+                            <style>
+                            .font {
+                                font-size: 20px;
+                                color: #075793;
+                                font-weight: bold;
+                                padding-right: 5px
+                            }
+
+                            .zjkx a {
+                                color: #000000
+                            }
+
+                            .zjkx a:hover {
+                                color: #f00
+                            }
+                            </style>
+                            <table width="346" height="147" class="zjkx" style="text-align: center; font-size: 14px;" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr class="firstRow">
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1682/index.html">科中简介</a>
+                                        </td>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1683/index.html">历史沿革</a>
+                                        </td>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1684/index.html">奋斗史话</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1685/index.html">代表大会</a>
+                                        </td>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1690/index.html">历届主席</a>
+                                        </td>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1782/index.html">组织机构</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="14"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1702/index.html">驻会领导</a>
+                                        </td>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1688/index.html">机关部门</a>
+                                        </td>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jskx.org.cn/col/col1689/index.html">直属单位</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="font">·</span><a href="http://www.jsxhw.org/default.php?mod=c&s=ssb989fff">省级学会</a>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table><a href="col/col1761/index.html" target="_blank"><img style="margin-top: 10px;" border="0" src="picture/0/1703141010105322615.png" width="345" height="79"/></a></td>
+        </tr>
+    </table>
+    <div style="padding-top:10px;"></div>
+    <table width="1270" border="0" align="center" cellpadding="0" cellspacing="0" height="223">
+        <tr>
+            <td width="444" align="center" style="border:solid 1px #CCCCCC">
+                <style>
+                img {
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px;
+                    border: none
+                }
+                </style>
+                <table width='444' height="220" border='0' cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td height="40" style="line-height:40px; border-bottom:1px solid #d9d9d9; text-align:center; font-size:18px; color:#165f97; font-weight:bold" colspan="2"><a style='cursor:hand; color:#165f97' href='http://www.cast.org.cn/n200685/c57773203/content.html' class='bt_link' target='_blank'>华润集团科学技术协会成立 形成专家、...</a></td>
+                    </tr>
+                    <tr>
+                        <td width='218' bgcolor='#FFFFFF' style="padding:13px 0px 13px 10px">
+                            <a style='cursor:hand' href='http://www.cast.org.cn/n200685/c57773203/content.html' target='_blank'>
+                                <IMG SRC='picture/0/1703171427483672445.png' border='0' width='196' height='157'>
+                            </a>
+                        </td>
+                        <td width="224" valign='top' style="color:#165f97; padding:15px 5px 15px 0px; line-height:30px; font-size:14px" bgcolor="#ffffff">
+                            <div id="removebr">12月1日，华润集团科学技术协会（以下简称华润科协）成立大会在华润大学小径湾校区召开。华润集团党委书记、董事长、华润大学校长傅育宁...
+                                <a style='cursor:hand' href='http://www.cast.org.cn/n200685/c57773203/content.html' class='bt_link' target='_blank'>
+                                    <font style="color:#f00; font-size:14px">（详细）</font>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <script>
+                $('#removebr').find('br').remove();
+                </script>
+            </td>
+            <td width="16"> </td>
+            <td width="444" align="center" valign="middle" style="border:solid 1px #CCCCCC">
+                <style>
+                img {
+                    list-style: none;
+                    padding: 0px;
+                    margin: 0px;
+                    border: none
+                }
+                </style>
+                <table width='444' height="220" border='0' cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td height="40" style="line-height:40px; border-bottom:1px solid #d9d9d9; text-align:center; font-size:18px; color:#165f97; font-weight:bold" colspan="2"><a style='cursor:hand; color:#165f97' href='art/2017/12/4/art_1664_782788.html' class='bt_link' target='_blank'>宿迁市科协召开深化改革工作推进会</a></td>
+                    </tr>
+                    <tr>
+                        <td width='218' bgcolor='#FFFFFF' style="padding:13px 0px 13px 10px">
+                            <a style='cursor:hand' href='art/2017/12/4/art_1664_782788.html' target='_blank'>
+                                <IMG SRC='picture/0/1703171429248926926.png' border='0' width='196' height='157'>
+                            </a>
+                        </td>
+                        <td width="224" valign='top' style="color:#165f97; padding:15px 5px 15px 0px; line-height:30px; font-size:14px" bgcolor="#ffffff">
+                            <div id="removebr1">会场 12月1日，宿迁市科协召开了全市科协系统深化改革工作推进会，进一步贯彻落实省科协深化改革工作现场会精神，加快推进全市科协...
+                                <a style='cursor:hand' href='art/2017/12/4/art_1664_782788.html' class='bt_link' target='_blank'>
+                                    <font style="color:#f00; font-size:14px">（详细）</font>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <script>
+                $('#removebr1').find('').remove();
+                </script>
+            </td>
+            <td width="16"> </td>
+            <td width="346" align="left" valign="top">
+                <table width="346" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="108" height="37" align="center" class="bp1" id="bp1" onMouseDown="return swap_bp(1)">
+                            <p>通知公告</p>
+                        </td>
+                        <td width="108" align="center" class="bp2" id="bp2" onMouseDown="return swap_bp(2)">活动预告</td>
+                        <td width="130" align="right">
+                            <div id="bpview1" style="padding-right:8px;">
+                                <style>
+                                .ywkd_more a {
+                                    color: #075793;
+                                    font-size: 14px
+                                }
+
+                                .ywkd_more a:hover {
+                                    color: #f00;
+                                }
+                                </style>
+                                <div class="ywkd_more"><a href="col/col23/index.html">更多>></a></div>
+                            </div>
+                            <div id="bpview2" style="display:none; padding-right:8px;">
+                                <style>
+                                .ywkd_more a {
+                                    color: #075793;
+                                    font-size: 14px
+                                }
+
+                                .ywkd_more a:hover {
+                                    color: #f00;
+                                }
+                                </style>
+                                <div class="ywkd_more"><a href="col/col77/index.html">更多>></a></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="bpview11">
+                    <style>
+                    .ywkd_more,
+                    .ywkd_more a {
+                        color: #075793;
+                        font-size: 14px;
+                        line-height: 25px
+                    }
+
+                    .ywkd_more a:hover {
+                        color: #f00;
+                    }
+                    </style>
+                    <div style="height:8px ;width:100%; border-top:1px solid #0f73bf"></div>
+                    <table width='100%' cellspacing='0' cellpadding='0' border='0'>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/8/8/art_23_777669.html' class='bt_link' title='江苏省科协信息系统安全管理规定' target=_blank>江苏省科协信息系统安全管理规定</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/12/11/art_23_782841.html' class='bt_link' title='关于2017年度省级海智基地工作评估结果的公示' target=_blank>关于2017年度省级海智基地工作评估结果的公...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/12/11/art_23_782839.html' class='bt_link' title='2017年江苏省科普产品研发基地入选名单公示' target=_blank>2017年江苏省科普产品研发基地入选名单公示</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/11/28/art_23_782447.html' class='bt_link' title='江苏省科协关于开展2018年度国家科学技术奖提名工作的通知' target=_blank>江苏省科协关于开展2018年度国家科学技术奖...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/11/25/art_23_782338.html' class='bt_link' title='2018年科学大众印刷招标中标结果公告' target=_blank>2018年科学大众印刷招标中标结果公告</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/11/20/art_23_782125.html' class='bt_link' title='关于公布2017年江苏省“基层科普行动计划” 奖补单位的通知' target=_blank>关于公布2017年江苏省“基层科普行动计划”...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="bpview12" style="display:none;">
+                    <style>
+                    .ywkd_more,
+                    .ywkd_more a {
+                        color: #075793;
+                        font-size: 14px;
+                        line-height: 25px
+                    }
+
+                    .ywkd_more a:hover {
+                        color: #f00;
+                    }
+                    </style>
+                    <div style="height:8px ;width:100%; border-top:1px solid #0f73bf"></div>
+                    <table width='100%' cellspacing='0' cellpadding='0' border='0'>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/12/7/art_77_782676.html' class='bt_link' title='江苏省青年学者”创新•创业“沙龙预告（2017年12月13日）' target=_blank>江苏省青年学者”创新•创业“沙龙预告（201...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/11/13/art_77_781916.html' class='bt_link' title='第54期江苏省青年科学家沙龙预告（2017年11月13日）' target=_blank>第54期江苏省青年科学家沙龙预告（2017年...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/10/18/art_77_780738.html' class='bt_link' title='第53期江苏省青年科学家沙龙预告（2017年10月25日）' target=_blank>第53期江苏省青年科学家沙龙预告（2017年...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/9/15/art_77_779132.html' class='bt_link' title='第52期江苏省青年科学家沙龙预告（2017年9月20日）' target=_blank>第52期江苏省青年科学家沙龙预告（2017年...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/8/15/art_77_777943.html' class='bt_link' title='南京科协大讲堂：“中国制造2025”与质量创新专题讲座' target=_blank>南京科协大讲堂：“中国制造2025”与质量创...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=''>
+                                <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                    <tr>
+                                        <td><a href='art/2017/6/13/art_77_775268.html' class='bt_link' title='江苏省青年学者”创新•创业“沙龙预告(2017年6月21日)' target=_blank>江苏省青年学者”创新•创业“沙龙预告(201...</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div style="padding-top:10px;"></div>
+    <table width="1270" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="908">
+                <p><img src="http://www.jskx.org.cn/picture/0/1703141020083609797.png?cache=0.3221991576720029" width="910" height="80" border="0" usemap="#Map" />
+                    <map name="Map">
+                        <area shape="rect" coords="-2,-1,562,87" href="http://www.jskch.org" target="_blank" />
+                    </map>
+                </p>
+            </td>
+            <td width="16"> </td>
+            <td width="346">
+                <table width="345" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="left"><a href="http://www.jstt.org.cn:8003/" target="_blank"><img width="167" height="79" src="picture/0/1703311126015261835.png" border="0"/></a></td>
+                        <td>&nbsp;</td>
+                        <td align="right"><a href="http://www.jskx.org.cn/col/col1512/index.html" target="_blank"><img width="167" height="79" src="picture/0/1703311338027338740.png" border="0"/></a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div style="padding-top:10px;"></div>
+    <table width="1270" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="908">
+                <table width="908" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="446" height="138" align="left" valign="top">
+                            <table width="446" border="0" cellspacing="0" cellpadding="0" style="border-bottom:solid 1px #0f73bf">
+                                <tr>
+                                    <td width="132" height="38" align="center" background="images/281/kx2017_20.png" style="color:#FFF; font-size:18px; font-weight:bold">省级学会</td>
+                                    <td width="314" align="right">
+                                        <style>
+                                        .ywkd_more a {
+                                            color: #075793;
+                                            font-size: 14px
+                                        }
+
+                                        .ywkd_more a:hover {
+                                            color: #f00;
+                                        }
+                                        </style>
+                                        <div class="ywkd_more">
+                                            <a href="http://www.jsxhw.org/default.php?mod=c&s=sse3f5a24 ">更多&gt;&gt;</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div>
+                                <div id="changeList1" style="margin-top:9px">
+                                </div>
+                            </div>
+                        </td>
+                        <td width="16"> </td>
+                        <td width="446" align="left" valign="top">
+                            <table width="446" border="0" cellspacing="0" cellpadding="0" style="border-bottom:solid 1px #0f73bf">
+                                <tr>
+                                    <td width="132" height="38" align="center" background="images/281/kx2017_20.png" style="color:#FFF; font-size:18px; font-weight:bold">市县科协</td>
+                                    <td width="314" align="right">
+                                        <style>
+                                        .ywkd_more a {
+                                            color: #075793;
+                                            font-size: 14px
+                                        }
+
+                                        .ywkd_more a:hover {
+                                            color: #f00;
+                                        }
+                                        </style>
+                                        <div class="ywkd_more"><a href="col/col85/index.html">更多>></a></div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <style>
+                            .ywkd_more,
+                            .ywkd_more a {
+                                color: #075793;
+                                font-size: 14px;
+                                line-height: 30px
+                            }
+
+                            .ywkd_more a:hover {
+                                color: #f00;
+                            }
+                            </style>
+                            <div style="height:8px ;width:100%"></div>
+                            <table width='100%' cellspacing='0' cellpadding='0' border='0'>
+                                <tr>
+                                    <td style=''>
+                                        <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                            <tr>
+                                                <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                                <td><a href='art/2017/12/12/art_87_782899.html' class='bt_link' title='无锡市惠山区第二届“科普之光”青少年科技活动展暨表彰会隆重举行' target=_blank>无锡市惠山区第二届“科普之光”青少年科技活动展...</a></td>
+                                                <td width='80' align='right'>12-12</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=''>
+                                        <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                            <tr>
+                                                <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                                <td><a href='art/2017/12/11/art_94_782876.html' class='bt_link' title='2017年盐城市青少年科技模型竞赛活动成功举办' target=_blank>2017年盐城市青少年科技模型竞赛活动成功举办</a></td>
+                                                <td width='80' align='right'>12-11</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=''>
+                                        <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                            <tr>
+                                                <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                                <td><a href='art/2017/12/11/art_85_782860.html' class='bt_link' title='南京市秦淮区社区科普工作再获上级科协专项资金扶持' target=_blank>南京市秦淮区社区科普工作再获上级科协专项资金扶...</a></td>
+                                                <td width='80' align='right'>12-11</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=''>
+                                        <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                            <tr>
+                                                <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                                <td><a href='art/2017/12/11/art_95_782861.html' class='bt_link' title='精准科普、追踪问效——连云港市科协将“流动科普服务”送到基层群众身边' target=_blank>精准科普、追踪问效——连云港市科协将“流动科普...</a></td>
+                                                <td width='80' align='right'>12-11</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=''>
+                                        <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                            <tr>
+                                                <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                                <td><a href='art/2017/12/11/art_86_782859.html' class='bt_link' title='常熟市支塘镇两家公司成立科学技术协会' target=_blank>常熟市支塘镇两家公司成立科学技术协会</a></td>
+                                                <td width='80' align='right'>12-11</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=''>
+                                        <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                            <tr>
+                                                <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                                <td><a href='art/2017/12/11/art_86_782858.html' class='bt_link' title='太仓市科技活动中心成功开展“科学自救 全身而退”消防安全系列科普活动' target=_blank>太仓市科技活动中心成功开展“科学自救 全身而退...</a></td>
+                                                <td width='80' align='right'>12-11</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style=''>
+                                        <table cellpadding='0' cellspacing='0' border='0' width='100%' class="ywkd_more">
+                                            <tr>
+                                                <td width="15" align="center"><img src='picture/0/1703140901165468655.png' align='absmiddle' border='0'></td>
+                                                <td><a href='art/2017/12/11/art_86_782857.html' class='bt_link' title='太仓市医学会举办针灸培训班' target=_blank>太仓市医学会举办针灸培训班</a></td>
+                                                <td width='80' align='right'>12-11</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="908" border="0" cellspacing="0" cellpadding="0" height="190" bgcolor="#c2ddf2">
+                    <tr>
+                        <td width="15"> </td>
+                        <td width="431" align="left" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="43" align="left" style="color:#0f73bf; font-size:18px; font-weight:bold"><a href="http://www.jskx.org.cn/col/col3/index.html" style="color:#0f73bf">专题·品牌</a></td>
+                                    <td width="314" align="right">
+                                        <style>
+                                        .ywkd_more a {
+                                            color: #075793;
+                                            font-size: 14px
+                                        }
+
+                                        .ywkd_more a:hover {
+                                            color: #f00;
+                                        }
+                                        </style>
+                                        <div class="ywkd_more"><a href="col/col3/index.html">更多>></a></div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="banner">
+                                <ul class="slider">
+                                    <li style="display: block;"><a href="col/col1941/index.html" target="_blank"><img src="picture/0/1709141327212286754.jpg" ></a></li>
+                                    <li style="display: block;"><a href="http://kxdz.com/kxsy/" target="_blank"><img src="picture/0/1708141510106514077.jpg" ></a></li>
+                                    <li style="display: block;"><a href="http://zsjs.js-seism.gov.cn/" target="_blank"><img src="picture/0/1706081316524086858.jpg" ></a></li>
+                                    <li style="display: block;"><a href="col/col1801/index.html" target="_blank"><img src="picture/0/1705091002443548595.jpg" ></a></li>
+                                    <li style="display: block;"><a href="http://www.jskx.org.cn/col/col3/index.html" target="_blank"><img src="picture/0/1704211125113602013.jpg" ></a></li>
+                                    <li style="display: block;"><a href="art/2016/11/9/art_3_766081.html" target="_blank"><img src="picture/0/1704211128059456032.jpg" ></a></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td width="15"> </td>
+                        <td width="432" align="left" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="43" align="left" style="color:#0f73bf; font-size:18px; font-weight:bold"><a href="http://www.jskx.org.cn/col/col1516/index.html" style="color:#0f73bf">微信·秀</a></td>
+                                    <td width="314" align="right">
+                                        <style>
+                                        .ywkd_more a {
+                                            color: #075793;
+                                            font-size: 14px
+                                        }
+
+                                        .ywkd_more a:hover {
+                                            color: #f00;
+                                        }
+                                        </style>
+                                        <div class="ywkd_more"><a href="col/col1516/index.html">更多>></a></div>
+                                    </td>
+                                </tr>
+                            </table><a href="http://www.jskx.org.cn/col/col1516/index.html" target="_blank"> <img src="picture/0/1703141042221631698.png" width="431" height="131" border="0"/></a></td>
+                        <td width="15"> </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="16"> </td>
+            <td width="346" align="left" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr class="firstRow">
+                            <td height="44" align="left" valign="top">
+                                <a href="http://www.cast.org.cn/" target="_blank"><img width="168" height="39" src="picture/0/1703311345117557022.png"/></a>
+                            </td>
+                            <td align="right" valign="top">
+                                <a href="http://www.kepuchina.cn/" target="_blank"><img width="167" height="39" src="picture/0/1703311345120035478.png"/></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <a href="http://www.jsxhw.org/" target="_blank"><img width="168" height="39" src="picture/0/1703311345116711473.png"/></a>
+                            </td>
+                            <td height="44" align="right" valign="top">
+                                <a href="http://www.jskjb.com/" target="_blank"><img width="167" height="39" src="picture/0/1703311345122304437.png"/></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <a href="http://www.kxdz.com/" target="_blank"><img width="168" height="39" src="picture/0/1703311345123943563.png"/></a>
+                            </td>
+                            <td height="44" align="right" valign="top">
+                                <a href="http://www.huikex.com/" target="_blank"><img width="167" height="39" src="picture/0/1703311345124862253.png"/></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <a href="http://www.yangtse.com/kepu" target="_blank"><img width="167" height="39" src="picture/0/1703311345126153546.png"/></a>
+                            </td>
+                            <td height="44" align="right" valign="top">
+                                <a href="http://www.jshome.org.cn/web/jshome/index" target="_blank"><img width="168" height="39" src="picture/0/1708091110223166321.png"/></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <a href="http://www.jsstem.org/" target="_blank"><img width="167" height="39" src="picture/0/1703311345295472639.png"/></a>
+                            </td>
+                            <td height="44" align="right" valign="top">
+                                <a href="http://www.jsstem.org/stem/" target="_blank"><img width="167" height="39" src="picture/0/1703311345296456643.png"/></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <a href="http://www.jsvol.com/" target="_blank"><img width="167" height="39" src="picture/0/1703311345297345237.png"/></a>
+                            </td>
+                            <td height="44" align="right" valign="top">
+                                <a href="http://www.sukepu.cn/" target="_blank"><img width="167" height="39" src="picture/0/1703311345298452054.png"/></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <a href="http://vol.jskp.cn/vol/default.aspx" target="_blank"><img width="167" height="39" src="picture/0/1703311345299374299.png"/></a>
+                            </td>
+                            <td height="44" align="right" valign="top">
+                                <a href="http://www.jsnjx.org/index/showIndexInfo.action" target="_blank"><img width="167" height="39" src="picture/0/1703311345300291724.png"/></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="44" align="left" valign="top">
+                                <a href="http://www.jskpcg.cn/" target="_blank"><img width="167" height="39" src="picture/0/1703311345303118611.png"/></a>
+                            </td>
+                            <td align="right" valign="top">
+                                <a href="http://www.exponline.org.cn" target="_blank"><img width="167" height="39" src="picture/0/1708071047499913898.jpg"/></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="background: rgb(255, 255, 255); width: 346px; height: 86px; overflow: hidden; margin-top: 6px;">
+                    <p style="text-align: center; color: rgb(15, 86, 129); line-height: 22px; font-size: 15px; font-weight: bold;">
+                        江苏省纪委驻省科技厅纪检组
+                    </p>
+                    <p style="color: rgb(165, 129, 5); line-height: 20px; padding-left: 15px; font-size: 13px;">
+                        邮箱：<span style="color: rgb(0, 0, 0);">zwgk@jstd.gov.cn</span>　　电话：<span style="color: rgb(0, 0, 0);">025－83350162</span> &nbsp; &nbsp;
+                    </p>
+                    <p style="color: rgb(165, 129, 5); line-height: 20px; padding-left: 15px; font-size: 13px;">
+                        手机：<span style="color: rgb(0, 0, 0);">15951610699</span>　　　　&nbsp;邮编：<span style="color: rgb(0, 0, 0);">210008</span> &nbsp; &nbsp;
+                    </p>
+                    <p style="color: rgb(165, 129, 5); line-height: 20px; padding-left: 15px; font-size: 13px;">
+                        地址：<span style="color: rgb(0, 0, 0);">南京市北京东路39号东305室</span> &nbsp; &nbsp;
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div style="padding-top:10px;"></div>
+    <table width="1270" border="0" align="center" cellpadding="0" cellspacing="0" height="45">
+        <tr>
+            <td width="198" align="center" bgcolor="#0f73bf" style="color:#FFF; font-size:18px; font-weight:bold">各地科技发展研究中心</td>
+            <td width="1142" align="center">
+                <style>
+                .ywkd_more,
+                .ywkd_more a {
+                    color: #075793;
+                    font-size: 14px;
+                    line-height: 30px
+                }
+
+                .ywkd_more a:hover {
+                    color: #f00;
+                }
+                </style>
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border:solid 1px #ccc; background:#ffffff">
+                    <tr>
+                        <td width="40"></td>
+                        <td height="53" align="center" class="ywkd_more">
+                            <table width='100%' cellspacing='0' cellpadding='0' border='0'>
+                                <tr>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://kx.nanjing.gov.cn/">南京</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://tlpsr.wuxi.gov.cn/">无锡</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://www.xzkx.com/Index.html">徐州</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://kx.changzhou.gov.cn/">常州</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://www.szst.cn/">苏州</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://www.ntkx.com/">南通</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://www.lygkx.org.cn/">连云港</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://kx.huaian.gov.cn/">淮安</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://kx.yancheng.gov.cn/">盐城</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://kx.yangzhou.gov.cn/">扬州</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://www.zjkx.org.cn/">镇江</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://www.tzast.com/">泰州</a>
+                                    </td>
+                                    <td style=''><img width="4" height="7" src="picture/0/1604262041176828662.jpg" border="0" />&nbsp;&nbsp;<a style="font-size:14px" target="_blank" href="http://www.rrkp.org.cn/">宿迁</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div style="padding-top:10px;"></div>
+    <div style="height:136px; background-color:#2781c6; text-align:center">
+        <style>
+        #imgConac {
+            width: 120px;
+            height: 120px
+        }
+        </style>
+        <div style="margin: 0px auto; width: 1270px; color: rgb(255, 255, 255); font-size: 14px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr class="firstRow">
+                        <td width="400" align="right">
+                            <br/>
+                        </td>
+                        <td width="100">
+                            <table width="170" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr class="firstRow">
+                                        <td height="10">
+                                            <br/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px 3px; text-align:center"><img width="94" height="95" src="picture/0/1706270927551452887.jpg" border="0" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: rgb(255, 255, 255); line-height: 30px; font-size: 14px;">苏科家园微服务平台</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td width="20">
+                            <br/>
+                        </td>
+                        <td width="100">
+                            <table width="100" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr class="firstRow">
+                                        <td height="10">
+                                            <br/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 0px 3px;"><img width="94" height="95" src="picture/0/1703141102298844533.png" border="0" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: rgb(255, 255, 255); line-height: 30px; font-size: 14px;">江苏省科协微博</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td width="30">
+                            <br/>
+                        </td>
+                        <td width="120">
+                            
+                            <span id="_ideConac" style="width: 120px"></span>
+                            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=52EE63B6CA062D6EE053012819AC5193" target="_blank"><img id="imgConac" src="http://dcs.conac.cn/image/red.png" data-bd-imgshare-binded="1" vspace="0" hspace="0" border="0">
+                            </a>
+                            </span>
+                            </td>
+                        </td>
+                        <td style="text-align: right; color: rgb(255, 255, 255); line-height: 30px; font-size: 14px;">版权所有：江苏省科学技术协会
+                            <br/>网站维护：江苏省科协信息中心 联系电话：025 83313187
+                            <br/><a href="http://www.miitbeian.gov.cn/" style="color:#ffffff">苏ICP备05080394号</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="images/281/jquery-1.12.2.min.js"></script>
+    <div class="container" id="wzsse" style="position:absolute; width:434px; height:160px; overflow:hidden">
+        <ul class="gallery">
+            <li><a href="http://kxdz.com/kxsy/" target="_blank"><img  src="http://www.jskx.org.cn/picture/0/1708141510106514077.jpg" width="434" height="128" /></a> </li>
+            <div style="text-align:center;line-height:30px;cursor:pointer;font-size:16px;width:100%" id="closepiaofu">关　闭</div>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <script type="text/javascript" src="images/281/floatadv.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("#closepiaofu").click(function() {
+            $("#wzsse").hide();
+        });
+    })
+    var ad1 = new AdMove("wzsse", true);
+    ad1.Run();
+    </script>
+    <script>
+    //自动轮播 定时器
+    var timer = setInterval(toNext, 4000);
+    var i = 0;
+
+    function toNext() {
+        i++;
+        if (i >= $(".slider li").length) {
+            i = 0;
+        }
+        change();
+    }
+
+    function toPrev() {
+        i--;
+        if (i < 0) {
+            i = $(".slider li").length;
+        }
+        change();
+    }
+
+    function change() {
+        $(".slider li").eq(i).fadeIn(800);
+        $(".slider li").not(":eq(" + i + ")").fadeOut(800);
+
+        $(".index_list li").eq(i).addClass("active");
+        $(".index_list li").not(":eq(" + i + ")").removeClass("active");
+    }
+    </script>
+    <!-- visitcount Begin -->
+    <iframe src='./module/visitcount/visit.jsp?type=1&i_webid=1&i_columnid=1' name="vishidden" id="vishidden" frameborder="0" style="width:0; height:0; display:none"></iframe>
+    <!-- visitcount End -->
+    <a href='http://www.hanweb.com' style='display:none'>Produced By 大汉网络 大汉版通发布系统</a>
+</body>
+
+</html>

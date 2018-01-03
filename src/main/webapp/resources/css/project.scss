@@ -1,0 +1,284 @@
+//project.scss
+
+//utils
+@import "./utils/normalize";
+
+//components
+@import "./components/button";
+@import "./components/line_text";
+
+//variables
+$pro-panel-width: 1240px;
+$pro-panel-height: 2000px;
+$pro-title-height: 40px;
+$pro-base-line-height: 30px;
+$pro-base-col-width: 85px;
+
+body{
+    background: {
+        color: #0f77c7;
+    };
+}
+
+.pro-panel {
+    width: $pro-panel-width;
+    height: $pro-panel-height;
+
+    position: absolute;
+    left: 50%;
+    margin-left: - floor($pro-panel-width / 2);
+    overflow: hidden;
+
+    background: white;
+    border-radius: 2em;
+
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    color: black;
+
+    >h1 {
+
+        height: $pro-title-height;
+        line-height: 35px;
+        margin-top: 15px;
+
+        font: {
+            size: 30px;
+            weight: 700;
+        };
+
+        text-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+        text-align: center;
+    }
+
+    text-align: center;
+
+    >.pro-conn{
+        height: $pro-panel-height - $pro-title-height - 30px;
+        width: $pro-panel-width * 3;
+        margin-left: -$pro-panel-width * 0;
+
+        >.pro-page-private{
+            float: left;
+            width: $pro-panel-width;
+            height: 600px;
+
+            >form{
+                >label{
+                    width: 440px;
+                    height: 40px;
+                    display: block;
+                    margin-top: 18px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    >span {
+                        height: 40px;
+                        line-height: 40px;
+                        width: 100px;
+                        float: left;
+                        font: {
+                            weight: bold;
+                        };
+
+                        color: #666;
+                    }
+
+                    >input[type="number"]{
+                        -webkit-appearance: textfield;
+                        -moz-appearance: textfield;
+                    }
+
+                    >.line-length {
+                        margin-left: 30px;
+                        width: 260px;
+                    }
+
+                    >.bt-length{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+
+        >.pro-page-notice{
+            float: left;
+            width: $pro-panel-width;
+            height: 600px;
+
+            p{
+                text-align: left;
+                margin: {
+                    left: 40px;
+                    top: 20px;
+                };
+
+
+                height: 40px;
+                line-height: 40px;
+                font: {
+                    size: 16px;
+                    weight: 200;
+                };
+            };
+
+            >.right-button{
+                float: right;
+                margin-right: 20px;
+                width: 200px;
+            }
+        }
+
+        >form{
+            >.pro-page-table{
+
+                float: left;
+                padding: {
+                    top: 20px;
+                    left: 12px;
+                    right: 12px;
+                };
+
+                width: $pro-panel-width - 24px;
+                height: 2000px;
+
+                font: {
+                    size: 14px;
+                };
+
+                table{
+                    background: white;
+                    margin: auto;
+                    text-align: center;
+
+                    width: 850px;
+
+                    tr{
+                        height: 30px;
+                        >td {
+                            border: 1px solid black;
+                            >input {
+                                text-align: center;
+                                border: 0;
+                            }
+
+                        }
+                        >.diagonal{
+                            background: url("../images/input/diagonal.png");
+                        }
+
+                        >.td-vertical-border-none{
+                            border: {
+                                top: 0;
+                                bottom: 0;
+                            };
+                        }
+
+                        >.td_top-border-none{
+                            border: {
+                                top: 0;
+                            };
+                        }
+                    }
+                }
+
+                >.table_button{
+                    width: 200px;
+                }
+
+                >.info_table{
+                    margin: auto;
+
+                    width: 950px;
+                    line-height: 30px;
+
+                    border: 1px solid black;
+
+                    font:{
+                        size: 14px;
+                    }
+
+                    >.info_title{
+                        width: inherit;
+                        height: 30px;
+                        text-align: center;
+
+                        border-bottom: 1px solid black;
+
+                        font: {
+                            size: 16px;
+                            weight: bold;
+                        };
+
+                    }
+
+                    >.info_append{
+                        width: inherit;
+                        height: 30px;
+                        text-align: center;
+
+                        border-bottom: 1px solid black;
+
+
+                    }
+
+                    >.info-footer-out{
+
+                        margin: {
+                            top: 10px;
+                        };
+
+                        width: inherit;
+                        height: 160px;
+
+                        >.info_footer{
+
+                            float: right;
+                            margin-right: 60px;
+
+                            width: 500px;
+                            height: 150px;
+                            text-align: right;
+
+                            >.footer_prove{
+                                float: right;
+
+                                width: 200px;
+                                height: 100px;
+                            }
+                            >.footer_date{
+                                float: right;
+                                margin: {
+                                    top: 10px;
+                                };
+                                width: 500px;
+                                height: 48px;
+
+                                >input{
+                                    width: 50px;
+                                }
+                            }
+                        }
+                    }
+
+                    >.info_content{
+
+                        border: 0;
+                        padding: {
+                            left: 5px;
+                            right: 5px;
+                        };
+
+                        width: 840px;
+                        height: 865px;
+
+                    }
+                    >.multi-line{
+                        margin: auto;
+                        width: 839px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

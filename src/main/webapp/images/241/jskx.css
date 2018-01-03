@@ -1,0 +1,174 @@
+/*项目部 2013.11.22 */
+/*说明：项目中，请将下面用不到的样式删除，不要保留在此文档中*/
+
+/*网页全局样式开始*/
+
+	body
+	{
+		/*body基本样式开始*/
+		font-family: "宋体",Tahoma,verdana;
+		color:#3d3d3d;
+		margin:0px;
+		padding:0px;
+		text-decoration:none;
+        text-align: left;
+		/*body基本样式结束*/
+
+		/*body扩展样式开始*/
+		background-repeat: repeat-y;	/*背景重复*/
+		background-position: center;	/*背景居中*/
+		background-position:top;
+		/*body扩展样式结束*/
+		
+	}
+
+	img {border:0;}/* 图片无边框*/
+
+	/*定义整个页面的宽度*/
+	page
+	{
+		width:auto;!important;
+		max-width:1000px !important;margin:0 auto; height:auto !important
+		width:1000px;
+	}
+
+	/*表格设置合并边框   注意：如果网页中用到了table的cellspace属性，会将页面的间距全部置为0，请慎用下面的样式*/
+	/*table {border-collapse:collapse;} */
+
+	/*指定当表格的单元格无内容时，显示该单元格的边框，不支持IE6 IE7 IE8(Q)*/
+	/*td {empty-cells:show;} */
+
+	/*页面容器初始化开始,*/
+	
+	tr,td {font-size:9pt; color:#3d3d3d; FONT-FAMILY:宋体; line-height:180%;}
+    form{ padding:0px; margin:0px;}
+	/*页面容器初始化结束*/	
+
+	/*清除页面底部高度，iframe所致*/
+	#vishidden{display:none}
+
+
+	/*版通基本样式开始*/
+
+		/*整个网页超链接样式开始*/
+	a {FONT-FAMILY:宋体; text-decoration: none; color:#3D3D3D;}	
+	a:visited { FONT-FAMILY:宋体;color:#3D3D3D;text-decoration:none;}
+	a:hover {FONT-FAMILY:宋体; text-decoration: underline; color:#ff0000;}
+
+		/*文章标题样式*/
+	.title{font-size:16pt; FONT-FAMILY:宋体; color:#3D3D3D; font-weight:bold; line-height:150%;}
+
+		/*首页、频道页栏目默认标题列表样式 小字体*/
+	.bt_link{font-size:9pt; FONT-FAMILY:宋体; text-decoration:none; color:#3d3d3d;}
+
+		/*底层栏目页标题列表及文章正文样式 大字体*/
+	.bt_content{font-size:10.5pt; FONT-FAMILY:宋体; text-decoration:none; color:#3D3D3D; line-height:180%;}
+
+		/*时间显示样式*/
+	.bt_time {  font-size:9pt; color:#999999; FONT-FAMILY:Verdana}
+	.bt_date {  font-size:9pt; color:#999999; FONT-FAMILY:Verdana}
+
+		/*"更多"显示样式*/
+	.bt_more {font-size:9pt ;color:#3D3D3D}
+	a.bt_more { text-decoration:none; color:#3d3d3d;}
+	a.bt_more:visited { text-decoration:none; color:#3d3d3d;} 
+	a.bt_more:hover { text-decoration:none; color:#ff0000;}
+
+	.bt_unline {border-bottom:#999999 dashed 1px;}
+
+		/*通用导航样式*/
+	a.white {text-decoration:none; color:#ffffff;font-size:10.5pt; font-weight:bold }
+	a.white:visited {color:#ffffff;font-size:10.5pt;font-weight:bold}
+	a.white:hover {color:#ff0000;font-size:10.5pt;font-weight:bold}
+
+		/*通用滚动条*/
+	.scrollbar{
+
+		/*滚动条的基本颜色*/
+		scrollbar-base-color:#c8e8fb;
+
+		/*立体滚动条强阴影的颜色*/
+		scrollbar-dark-shadow-color:#F5F1D8;
+
+		/*立体滚动条凸出部分的颜色*/
+		scrollbar-face-color:#E8E1B5;
+	
+		/*滚动条空白部分的颜色*/
+		scrollbar-highlight-color:#c8e8fb;
+
+		/*立体滚动条阴影的颜色*/
+		scrollbar-shadow-color:#E8E1B5;
+
+		/*立体滚动条亮边的颜色*/
+		scrollbar-3d-light-color:#E8E1B5;
+
+		/*上下按钮上三角箭头的颜色*/
+		scrollbar-arrow-color:#4D6185;	
+		
+	}
+
+	/*版通基本样式结束*/
+
+/*网页全局样式结束*/
+
+/* 自定义样式开始 */
+
+	/*	一些滤镜的样式 慎用，耗内存 */		
+	/* Glow 扩充的阴影字 支持IE4.0-IE9，不支持其他内核浏览器*/
+	.glow
+	{
+		FONT-SIZE: 10.5pt; 
+		filter: Glow(Color=#3D3D3D, Strength=2)
+	}   
+
+	/* Gradient 渐变 gradientType=0垂直渐变 1水平渐变默认 00完全透明  ff完全不透明， 支持IE5.5-IE9,不支持其他内核浏览器 */
+	.grad
+	{
+		FONT-SIZE: 10.5pt; 
+		FILTER:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FF0000FF,endColorStr=#3d3d3d00)
+	}	
+
+	/* AlphaImageLoader 图片平铺  scale:拉伸图片满表格 crop:显示图片自身大小并显示背景色 image:只显示图片， 支持IE5.5-IE9,不支持其他内核浏览器*/
+	.alphaimage
+	{
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/图片文件', sizingMethod='scale')
+	} 
+
+	/* Blur 模糊阴影字,支持IE5.5-IE9,不支持其他内核浏览器*/
+	.blur1
+	{
+		filter:progid:DXImageTransform.Microsoft.Blur(makeShadow=true,pixelRadius=1,shadowOpacity=0.25)
+	}	
+
+	/* Blur 模糊阴影字，支持IE5.5—IE9，不支持其他内核浏览器 */
+	.blur2
+	{
+		filter:blur(add=ture,direction=135,strength=6)
+	}	
+
+	/* DropShadow 有斜度的阴影字，支持IE4.0-IE9，不支持其他内核浏览器 */
+	.dropshadow1 
+	{
+		color: #ff0000;
+		filter: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=1)
+	}	
+
+	/*	制作对象的阴影效果 ，支持IE4.0-IE9，不支持其他内核浏览器 */
+	.dropshadow2
+	{
+		filter:progid:DXImageTransform.Microsoft.DropShadow(color=#FF404040,offX=3,offY=3,positives=true)
+	}
+	
+	/*	文字发光，支持IE4.0-IE9，不支持其他内核浏览器 */
+	.dropshadow3
+	{
+		filter:Dropshadow(offx=1,offy=0,color=white)Dropshadow(offx=0,offy=1,color=white)Dropshadow(offx=0,offy=-1,color=white)Dropshadow(offx=-1,offy=0,color=white)
+	}
+	
+	/* 背景透明，支持ie6-IE9、chrome、火狐等等 */
+	.alphabg
+	{
+		FILTER: alpha(opacity=50); opacity: 0.5; -moz-opacity: 0.5
+	}
+
+/* 自定义样式结束 */

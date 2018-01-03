@@ -1,0 +1,44 @@
+//card scss for 学术学会 page information
+
+.card{
+    width: $card-width;
+    height: $card-height;
+    background-color: $card-content-background-color;
+
+    .card__title{
+        width: $card-width;
+        height: $card-title-height;
+        background-color: $card-title-background-color;
+
+        p{
+            color: $font-color-white;
+            font:{
+                family: $font-family-card;
+                size: $font-size-card-title;
+            };
+            text-align: center;
+            line-height: $card-title-height;
+        };
+    }
+
+    .card__content{
+
+        overflow: hidden;
+        padding: {
+            left: $card-content-padding-left;
+        };
+        height: $card-height - $card-title-height;
+        width: $card-width - $card-content-padding-left;
+
+        ul li {
+            height: 20px;
+            padding-top: 10px;
+            line-height: 20px;
+            text-indent: 10px;
+        }
+    }
+}
+
+
+
+

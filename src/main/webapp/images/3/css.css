@@ -1,0 +1,14 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{font-size:12px; font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif; }
+input,button,textarea,select,optgroup,option{font-size:12px;font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;}
+body, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, h1{padding:0;margin:0;}
+img{border:none;}
+ul, ol { list-style:none; }
+li{list-style-type:none;}
+a{text-decoration:none; color:#595757; cursor: pointer;}
+a:hover{text-decoration:none; color:#007ce4; cursor: pointer;}
+.ty{}
+
+、
